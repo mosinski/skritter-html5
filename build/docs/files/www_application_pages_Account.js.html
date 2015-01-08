@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>www/application/pages/Account.js - skritter-html5</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="skritter-html5"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.2632</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Analytics.html">Analytics</a></li>
+            
+                <li><a href="../classes/Api.html">Api</a></li>
+            
+                <li><a href="../classes/Application.html">Application</a></li>
+            
+                <li><a href="../classes/Assets.html">Assets</a></li>
+            
+                <li><a href="../classes/BaseApplication.html">BaseApplication</a></li>
+            
+                <li><a href="../classes/BaseCollection.html">BaseCollection</a></li>
+            
+                <li><a href="../classes/BaseModel.html">BaseModel</a></li>
+            
+                <li><a href="../classes/BasePage.html">BasePage</a></li>
+            
+                <li><a href="../classes/BaseRouter.html">BaseRouter</a></li>
+            
+                <li><a href="../classes/BaseView.html">BaseView</a></li>
+            
+                <li><a href="../classes/Bootstrap.html">Bootstrap</a></li>
+            
+                <li><a href="../classes/CanvasCharacter.html">CanvasCharacter</a></li>
+            
+                <li><a href="../classes/CanvasStroke.html">CanvasStroke</a></li>
+            
+                <li><a href="../classes/CharacterEditor.html">CharacterEditor</a></li>
+            
+                <li><a href="../classes/DataDecomp.html">DataDecomp</a></li>
+            
+                <li><a href="../classes/DataDecomps.html">DataDecomps</a></li>
+            
+                <li><a href="../classes/DataItem.html">DataItem</a></li>
+            
+                <li><a href="../classes/DataItems.html">DataItems</a></li>
+            
+                <li><a href="../classes/DataParam.html">DataParam</a></li>
+            
+                <li><a href="../classes/DataParams.html">DataParams</a></li>
+            
+                <li><a href="../classes/DataReview.html">DataReview</a></li>
+            
+                <li><a href="../classes/DataReviews.html">DataReviews</a></li>
+            
+                <li><a href="../classes/DataSentence.html">DataSentence</a></li>
+            
+                <li><a href="../classes/DataSentences.html">DataSentences</a></li>
+            
+                <li><a href="../classes/DataSRSConfig.html">DataSRSConfig</a></li>
+            
+                <li><a href="../classes/DataSRSConfigs.html">DataSRSConfigs</a></li>
+            
+                <li><a href="../classes/DataStroke.html">DataStroke</a></li>
+            
+                <li><a href="../classes/DataStrokes.html">DataStrokes</a></li>
+            
+                <li><a href="../classes/DataVocab.html">DataVocab</a></li>
+            
+                <li><a href="../classes/DataVocabList.html">DataVocabList</a></li>
+            
+                <li><a href="../classes/DataVocabLists.html">DataVocabLists</a></li>
+            
+                <li><a href="../classes/DataVocabs.html">DataVocabs</a></li>
+            
+                <li><a href="../classes/Dialogs.html">Dialogs</a></li>
+            
+                <li><a href="../classes/IndexedDBAdapter.html">IndexedDBAdapter</a></li>
+            
+                <li><a href="../classes/Kana.html">Kana</a></li>
+            
+                <li><a href="../classes/ListRowTable.html">ListRowTable</a></li>
+            
+                <li><a href="../classes/ListSectionTable.html">ListSectionTable</a></li>
+            
+                <li><a href="../classes/ListTable.html">ListTable</a></li>
+            
+                <li><a href="../classes/Mapper.html">Mapper</a></li>
+            
+                <li><a href="../classes/PageAccount.html">PageAccount</a></li>
+            
+                <li><a href="../classes/PageCreateAccount.html">PageCreateAccount</a></li>
+            
+                <li><a href="../classes/PageDashboard.html">PageDashboard</a></li>
+            
+                <li><a href="../classes/PageExport.html">PageExport</a></li>
+            
+                <li><a href="../classes/PageFilters.html">PageFilters</a></li>
+            
+                <li><a href="../classes/PageLanding.html">PageLanding</a></li>
+            
+                <li><a href="../classes/PageLanguageSelect.html">PageLanguageSelect</a></li>
+            
+                <li><a href="../classes/PageLearningCenter.html">PageLearningCenter</a></li>
+            
+                <li><a href="../classes/PageList.html">PageList</a></li>
+            
+                <li><a href="../classes/PageLists.html">PageLists</a></li>
+            
+                <li><a href="../classes/PageListSection.html">PageListSection</a></li>
+            
+                <li><a href="../classes/PageListSelect.html">PageListSelect</a></li>
+            
+                <li><a href="../classes/PageLogin.html">PageLogin</a></li>
+            
+                <li><a href="../classes/PageScratchpad.html">PageScratchpad</a></li>
+            
+                <li><a href="../classes/PageSettings.html">PageSettings</a></li>
+            
+                <li><a href="../classes/PageStats.html">PageStats</a></li>
+            
+                <li><a href="../classes/PageStrokeOrder.html">PageStrokeOrder</a></li>
+            
+                <li><a href="../classes/PageStudy.html">PageStudy</a></li>
+            
+                <li><a href="../classes/PageTests.html">PageTests</a></li>
+            
+                <li><a href="../classes/PageWords.html">PageWords</a></li>
+            
+                <li><a href="../classes/ParamEditor.html">ParamEditor</a></li>
+            
+                <li><a href="../classes/Params.html">Params</a></li>
+            
+                <li><a href="../classes/PinyinConverter.html">PinyinConverter</a></li>
+            
+                <li><a href="../classes/Prompt.html">Prompt</a></li>
+            
+                <li><a href="../classes/PromptCanvas.html">PromptCanvas</a></li>
+            
+                <li><a href="../classes/PromptController.html">PromptController</a></li>
+            
+                <li><a href="../classes/PromptDefn.html">PromptDefn</a></li>
+            
+                <li><a href="../classes/PromptGradingButtons.html">PromptGradingButtons</a></li>
+            
+                <li><a href="../classes/PromptRdng.html">PromptRdng</a></li>
+            
+                <li><a href="../classes/PromptRune.html">PromptRune</a></li>
+            
+                <li><a href="../classes/PromptTone.html">PromptTone</a></li>
+            
+                <li><a href="../classes/Recognizer.html">Recognizer</a></li>
+            
+                <li><a href="../classes/Router.html">Router</a></li>
+            
+                <li><a href="../classes/RouterAccountCreation.html">RouterAccountCreation</a></li>
+            
+                <li><a href="../classes/RouterAdmin.html">RouterAdmin</a></li>
+            
+                <li><a href="../classes/RouterLearningCenter.html">RouterLearningCenter</a></li>
+            
+                <li><a href="../classes/ScheduleItem.html">ScheduleItem</a></li>
+            
+                <li><a href="../classes/ScheduleItems.html">ScheduleItems</a></li>
+            
+                <li><a href="../classes/Shortstraw.html">Shortstraw</a></li>
+            
+                <li><a href="../classes/Sidebars.html">Sidebars</a></li>
+            
+                <li><a href="../classes/Strokes.html">Strokes</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TimerStopwatch.html">TimerStopwatch</a></li>
+            
+                <li><a href="../classes/User.html">User</a></li>
+            
+                <li><a href="../classes/UserData.html">UserData</a></li>
+            
+                <li><a href="../classes/UserSettings.html">UserSettings</a></li>
+            
+                <li><a href="../classes/UserStats.html">UserStats</a></li>
+            
+                <li><a href="../classes/UserSubscription.html">UserSubscription</a></li>
+            
+                <li><a href="../classes/VocabTable.html">VocabTable</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/Application.html">Application</a></li>
+            
+                <li><a href="../modules/Components.html">Components</a></li>
+            
+                <li><a href="../modules/Framework.html">Framework</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: www/application/pages/Account.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Application
+ */
+define([
+    &#x27;framework/BasePage&#x27;,
+    &#x27;require.text!templates/account.html&#x27;
+], function(BasePage, TemplateMobile) {
+    /**
+     * @class PageAccount
+     * @extends BasePage
+     */
+    var PageAccount = BasePage.extend({
+        /**
+         * @method initialize
+         */
+        initialize: function() {
+            this.title = app.strings.account.title;
+            this.settings = app.user.settings;
+            this.sub = app.user.subscription;
+        },
+        /**
+         * @method render
+         * @returns {PageAccount}
+         */
+        render: function() {
+            this.$el.html(this.compile(TemplateMobile));
+            this.elements.accountCountry = this.$(&#x27;#account-country&#x27;);
+            this.elements.accountDisplayName = this.$(&#x27;#account-displayname&#x27;);
+            this.elements.accountID = this.$(&#x27;#account-id&#x27;);
+            this.elements.accountEmail = this.$(&#x27;#account-email&#x27;);
+            this.elements.accountTimezone = this.$(&#x27;#account-timezone&#x27;);
+            this.elements.buttonResetAll = this.$(&#x27;#button-reset-all&#x27;);
+            this.elements.subDetail = this.$(&#x27;#sub-detail&#x27;);
+            this.elements.subDetailMethod = this.$(&#x27;#sub-detail-method&#x27;);
+            this.elements.subDetailPlan = this.$(&#x27;#sub-detail-plan&#x27;);
+            this.elements.subDetailRecurring = this.$(&#x27;#sub-detail-recurring&#x27;);
+            this.elements.subTrialExpires = this.$(&#x27;#sub-trial-expires&#x27;);
+            this.elements.subMessage = this.$(&#x27;#sub-message&#x27;);
+            this.elements.subStatus = this.$(&#x27;#sub-status&#x27;);
+            this.elements.subButtonMonth = this.$(&#x27;#subscribe-month&#x27;);
+            this.elements.subButtonYear = this.$(&#x27;#subscribe-year&#x27;);
+            this.renderElements();
+            return this;
+        },
+        /**
+         * @method renderElements
+         * @returns {PageAccount}
+         */
+        renderElements: function() {
+            if (this.sub.getRemainingTrial()) {
+                this.elements.subStatus.text(&#x27;Trial&#x27;).addClass(&#x27;text-warning&#x27;);
+                this.elements.subTrialExpires.find(&#x27;span&#x27;).text(this.sub.get(&#x27;expires&#x27;));
+                this.elements.subDetail.hide();
+            } else if (this.sub.isExpired()) {
+                this.elements.subStatus.text(&#x27;Expired&#x27;).addClass(&#x27;text-danger&#x27;);
+                this.elements.subTrialExpires.hide();
+                this.elements.subDetail.hide();
+            } else if (this.sub.get(&#x27;subscribed&#x27;) &amp;&amp; this.sub.get(&#x27;expires&#x27;)){
+                this.elements.subStatus.text(&#x27;Active&#x27;).addClass(&#x27;text-success&#x27;);
+                this.elements.subDetailMethod.text(this.sub.get(&#x27;subscribed&#x27;));
+                this.elements.subDetailPlan.text(this.sub.get(&#x27;plan&#x27;));
+                this.elements.subDetailRecurring.text(this.sub.get(&#x27;expires&#x27;));
+                this.elements.subTrialExpires.hide();
+                this.elements.subButtonMonth.hide();
+                this.elements.subButtonYear.hide();
+            } else {
+                this.elements.subStatus.text(&#x27;Free&#x27;).addClass(&#x27;text-info&#x27;);
+                this.elements.subDetail.hide();
+                this.elements.subTrialExpires.hide();
+                this.elements.subButtonMonth.hide();
+                this.elements.subButtonYear.hide();
+            }
+            if ([
+                    &#x27;jaketest1&#x27;,
+                    &#x27;mcfarljwtest1&#x27;,
+                    &#x27;mcfarljwtest2&#x27;,
+                    &#x27;mcfarljwtest3&#x27;
+                ].indexOf(app.user.settings.get(&#x27;name&#x27;)) === -1) {
+                this.elements.buttonResetAll.hide();
+            } else {
+                this.elements.buttonResetAll.show();
+            }
+            this.elements.accountCountry.val(this.settings.get(&#x27;country&#x27;));
+            this.elements.accountID.val(this.settings.get(&#x27;id&#x27;));
+            this.elements.accountDisplayName.val(this.settings.get(&#x27;name&#x27;));
+            this.elements.accountEmail.val(this.settings.get(&#x27;email&#x27;));
+            this.loadTimezones();
+            return this;
+        },
+        /**
+         * @method events
+         * @returns {Object}
+         */
+        events: _.extend({}, BasePage.prototype.events, {
+            &#x27;change .account-general-form input&#x27;: &#x27;handleGeneralFormChanged&#x27;,
+            &#x27;change .account-general-form select&#x27;: &#x27;handleGeneralFormChanged&#x27;,
+            &#x27;vclick #button-download-all&#x27;: &#x27;handleButtonDownloadAllClicked&#x27;,
+            &#x27;vclick #button-reset-all&#x27;: &#x27;handleButtonResetAllClicked&#x27;,
+            &#x27;vclick #button-restore-subscription&#x27;: &#x27;handleButtonRestoreSubscriptionClicked&#x27;,
+            &#x27;vclick #button-save&#x27;: &#x27;handleButtonSaveClicked&#x27;,
+            &#x27;vclick #subscribe-month&#x27;: &#x27;handleSubscribeMonth&#x27;,
+            &#x27;vclick #subscribe-year&#x27;: &#x27;handleSubscribeYear&#x27;
+        }),
+        /**
+         * @method handleButtonDownloadAllClicked
+         * @param {Event} event
+         */
+        handleButtonDownloadAllClicked: function(event) {
+            event.preventDefault();
+            app.analytics.trackEvent(&#x27;Account&#x27;, &#x27;click&#x27;, &#x27;restore_data&#x27;);
+            app.dialogs.show().element(&#x27;.message-title&#x27;).text(&#x27;Restoring Data&#x27;);
+            app.dialogs.element(&#x27;.message-text&#x27;).text(&#x27;&#x27;);
+            app.user.data.items.downloadAll(function() {
+                app.reload();
+            }, function() {
+                app.dialogs.element(&#x27;.message-title&#x27;).text(&#x27;Something went wrong.&#x27;);
+                app.dialogs.element(&#x27;.message-text&#x27;).text(&#x27;Check your connection and click reload.&#x27;);
+                app.dialogs.element(&#x27;.message-confirm&#x27;).html(app.fn.bootstrap.button(&#x27;Reload&#x27;, {level: &#x27;primary&#x27;}));
+                app.dialogs.element(&#x27;.message-confirm button&#x27;).on(&#x27;vclick&#x27;, function() {
+                    app.reload();
+                });
+            });
+        },
+        /**
+         * @method handleButtonResetAllClicked
+         * @param {Event} event
+         */
+        handleButtonResetAllClicked: function(event) {
+            event.preventDefault();
+            app.analytics.trackEvent(&#x27;Account&#x27;, &#x27;click&#x27;, &#x27;reset_all&#x27;);
+            app.dialogs.show(&#x27;confirm&#x27;).element(&#x27;.modal-title span&#x27;).text(&#x27;Reset Account&#x27;);
+            app.dialogs.element(&#x27;.confirm&#x27;).on(&#x27;vclick&#x27;, function() {
+                async.series([
+                    function(callback) {
+                        app.dialogs.hide(callback);
+                    },
+                    function(callback) {
+                        app.dialogs.show();
+                        app.dialogs.element(&#x27;.message-title&#x27;).text(&#x27;Resetting Account&#x27;);
+                        app.api.resetAccount({lang: app.user.getLanguageCode()}, function() {
+                            callback();
+                        }, function(error) {
+                            callback(error);
+                        });
+                    },
+                    function(callback) {
+                        app.user.data.items.downloadAll(function() {
+                            callback();
+                        }, function(error) {
+                            callback(error);
+                        });
+                    }
+                ], function(error) {
+                    if (error) {
+                        app.dialogs.element(&#x27;.message-title&#x27;).text(&#x27;Something went wrong.&#x27;);
+                        app.dialogs.element(&#x27;.message-text&#x27;).text(&#x27;Check your connection and click reload.&#x27;);
+                        app.dialogs.element(&#x27;.message-confirm&#x27;).html(app.fn.bootstrap.button(&#x27;Reload&#x27;, {level: &#x27;primary&#x27;}));
+                        app.dialogs.element(&#x27;.message-confirm button&#x27;).on(&#x27;vclick&#x27;, function() {
+                            app.reload();
+                        });
+                    } else {
+                        app.reload();
+                    }
+                });
+            });
+        },
+        /**
+         * @method handleButtonRestoreSubscriptionClicked
+         */
+        handleButtonRestoreSubscriptionClicked: function() {
+            app.analytics.trackEvent(&#x27;Account&#x27;, &#x27;click&#x27;, &#x27;restore_subscription&#x27;);
+            app.dialogs.show().element(&#x27;.message-title&#x27;).text(&#x27;Restoring Subscription&#x27;);
+            app.user.subscription.restoreGoogle(function() {
+                app.dialogs.element(&#x27;.message-title&#x27;).text(&#x27;Subscription Restored&#x27;);
+                app.dialogs.element(&#x27;.loader-image&#x27;).hide();
+                app.dialogs.element(&#x27;.message-text&#x27;).text(&quot;Please click to reload the application.&quot;);
+                app.dialogs.element(&#x27;.message-confirm&#x27;).html(app.fn.bootstrap.button(&quot;Reload&quot;, {level: &#x27;primary&#x27;}));
+                app.dialogs.element(&#x27;.message-confirm button&#x27;).on(&#x27;vclick&#x27;, function() {
+                    app.reload();
+                });
+            }, function(error) {
+                app.dialogs.element(&#x27;.message-title&#x27;).text(&#x27;Subscription Error&#x27;);
+                app.dialogs.element(&#x27;.loader-image&#x27;).hide();
+                app.dialogs.element(&#x27;.message-text&#x27;).text(error);
+                app.dialogs.element(&#x27;.message-close&#x27;).html(app.fn.bootstrap.button(&quot;Close&quot;, {level: &#x27;default&#x27;}));
+                app.dialogs.element(&#x27;.message-close button&#x27;).on(&#x27;vclick&#x27;, function() {
+                    app.dialogs.hide();
+                });
+            });
+        },
+        /**
+         * @method handleGeneralFormChanged
+         * @param {Event} event
+         */
+        handleGeneralFormChanged: function(event) {
+            event.preventDefault();
+            var self = this;
+            this.settings.set({
+                country: this.elements.accountCountry.val(),
+                email: this.elements.accountEmail.val(),
+                name: this.elements.accountDisplayName.val(),
+                timezone: this.elements.accountTimezone.val()
+            }).update(function() {
+                $.notify(&#x27;Account updated!&#x27;, &#x27;success&#x27;);
+            }, function(error) {
+                $.notify(error.responseJSON ? error.responseJSON.message : &#x27;Something went wrong!&#x27;, &#x27;error&#x27;);
+                self.renderElements();
+            });
+        },
+        /**
+         * @method handleSubscribeMonth
+         */
+        handleSubscribeMonth: function() {
+            var self = this;
+            this.sub.subscribeGoogle(&#x27;one.month.sub&#x27;, function() {
+                app.reload();
+            }, function(error) {
+                self.elements.subMessage.addClass(&#x27;text-danger&#x27;).text(error);
+            });
+        },
+        /**
+         * @method handleSubscribeYear
+         */
+        handleSubscribeYear: function() {
+            var self = this;
+            this.sub.subscribeGoogle(&#x27;one.year.sub&#x27;, function() {
+                app.reload();
+            }, function(error) {
+                self.elements.subMessage.addClass(&#x27;text-danger&#x27;).text(error);
+            });
+        },
+        /**
+         * @method loadTimezones
+         * @returns {PageAccount}
+         */
+        loadTimezones: function() {
+            var options = [];
+            var timezones = moment.tz.names();
+            for (var i = 0, length = timezones.length; i &lt; length; i++) {
+                var option = &quot;&lt;option value=&#x27;&quot; + timezones[i] + &quot;&#x27;&gt;&quot;;
+                option += timezones[i] + &#x27; | &#x27; + moment().tz(timezones[i]).format(&#x27;HH:mm&#x27;);
+                option += &quot;&lt;/option&gt;&quot;;
+                options.push(option);
+            }
+            this.elements.accountTimezone.html(options);
+            this.elements.accountTimezone.val(this.settings.get(&#x27;timezone&#x27;));
+            return this;
+        }
+    });
+
+    return PageAccount;
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

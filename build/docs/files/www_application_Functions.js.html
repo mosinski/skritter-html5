@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>www/application/Functions.js - skritter-html5</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="skritter-html5"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.2632</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Analytics.html">Analytics</a></li>
+            
+                <li><a href="../classes/Api.html">Api</a></li>
+            
+                <li><a href="../classes/Application.html">Application</a></li>
+            
+                <li><a href="../classes/Assets.html">Assets</a></li>
+            
+                <li><a href="../classes/BaseApplication.html">BaseApplication</a></li>
+            
+                <li><a href="../classes/BaseCollection.html">BaseCollection</a></li>
+            
+                <li><a href="../classes/BaseModel.html">BaseModel</a></li>
+            
+                <li><a href="../classes/BasePage.html">BasePage</a></li>
+            
+                <li><a href="../classes/BaseRouter.html">BaseRouter</a></li>
+            
+                <li><a href="../classes/BaseView.html">BaseView</a></li>
+            
+                <li><a href="../classes/Bootstrap.html">Bootstrap</a></li>
+            
+                <li><a href="../classes/CanvasCharacter.html">CanvasCharacter</a></li>
+            
+                <li><a href="../classes/CanvasStroke.html">CanvasStroke</a></li>
+            
+                <li><a href="../classes/CharacterEditor.html">CharacterEditor</a></li>
+            
+                <li><a href="../classes/DataDecomp.html">DataDecomp</a></li>
+            
+                <li><a href="../classes/DataDecomps.html">DataDecomps</a></li>
+            
+                <li><a href="../classes/DataItem.html">DataItem</a></li>
+            
+                <li><a href="../classes/DataItems.html">DataItems</a></li>
+            
+                <li><a href="../classes/DataParam.html">DataParam</a></li>
+            
+                <li><a href="../classes/DataParams.html">DataParams</a></li>
+            
+                <li><a href="../classes/DataReview.html">DataReview</a></li>
+            
+                <li><a href="../classes/DataReviews.html">DataReviews</a></li>
+            
+                <li><a href="../classes/DataSentence.html">DataSentence</a></li>
+            
+                <li><a href="../classes/DataSentences.html">DataSentences</a></li>
+            
+                <li><a href="../classes/DataSRSConfig.html">DataSRSConfig</a></li>
+            
+                <li><a href="../classes/DataSRSConfigs.html">DataSRSConfigs</a></li>
+            
+                <li><a href="../classes/DataStroke.html">DataStroke</a></li>
+            
+                <li><a href="../classes/DataStrokes.html">DataStrokes</a></li>
+            
+                <li><a href="../classes/DataVocab.html">DataVocab</a></li>
+            
+                <li><a href="../classes/DataVocabList.html">DataVocabList</a></li>
+            
+                <li><a href="../classes/DataVocabLists.html">DataVocabLists</a></li>
+            
+                <li><a href="../classes/DataVocabs.html">DataVocabs</a></li>
+            
+                <li><a href="../classes/Dialogs.html">Dialogs</a></li>
+            
+                <li><a href="../classes/IndexedDBAdapter.html">IndexedDBAdapter</a></li>
+            
+                <li><a href="../classes/Kana.html">Kana</a></li>
+            
+                <li><a href="../classes/ListRowTable.html">ListRowTable</a></li>
+            
+                <li><a href="../classes/ListSectionTable.html">ListSectionTable</a></li>
+            
+                <li><a href="../classes/ListTable.html">ListTable</a></li>
+            
+                <li><a href="../classes/Mapper.html">Mapper</a></li>
+            
+                <li><a href="../classes/PageAccount.html">PageAccount</a></li>
+            
+                <li><a href="../classes/PageCreateAccount.html">PageCreateAccount</a></li>
+            
+                <li><a href="../classes/PageDashboard.html">PageDashboard</a></li>
+            
+                <li><a href="../classes/PageExport.html">PageExport</a></li>
+            
+                <li><a href="../classes/PageFilters.html">PageFilters</a></li>
+            
+                <li><a href="../classes/PageLanding.html">PageLanding</a></li>
+            
+                <li><a href="../classes/PageLanguageSelect.html">PageLanguageSelect</a></li>
+            
+                <li><a href="../classes/PageLearningCenter.html">PageLearningCenter</a></li>
+            
+                <li><a href="../classes/PageList.html">PageList</a></li>
+            
+                <li><a href="../classes/PageLists.html">PageLists</a></li>
+            
+                <li><a href="../classes/PageListSection.html">PageListSection</a></li>
+            
+                <li><a href="../classes/PageListSelect.html">PageListSelect</a></li>
+            
+                <li><a href="../classes/PageLogin.html">PageLogin</a></li>
+            
+                <li><a href="../classes/PageScratchpad.html">PageScratchpad</a></li>
+            
+                <li><a href="../classes/PageSettings.html">PageSettings</a></li>
+            
+                <li><a href="../classes/PageStats.html">PageStats</a></li>
+            
+                <li><a href="../classes/PageStrokeOrder.html">PageStrokeOrder</a></li>
+            
+                <li><a href="../classes/PageStudy.html">PageStudy</a></li>
+            
+                <li><a href="../classes/PageTests.html">PageTests</a></li>
+            
+                <li><a href="../classes/PageWords.html">PageWords</a></li>
+            
+                <li><a href="../classes/ParamEditor.html">ParamEditor</a></li>
+            
+                <li><a href="../classes/Params.html">Params</a></li>
+            
+                <li><a href="../classes/PinyinConverter.html">PinyinConverter</a></li>
+            
+                <li><a href="../classes/Prompt.html">Prompt</a></li>
+            
+                <li><a href="../classes/PromptCanvas.html">PromptCanvas</a></li>
+            
+                <li><a href="../classes/PromptController.html">PromptController</a></li>
+            
+                <li><a href="../classes/PromptDefn.html">PromptDefn</a></li>
+            
+                <li><a href="../classes/PromptGradingButtons.html">PromptGradingButtons</a></li>
+            
+                <li><a href="../classes/PromptRdng.html">PromptRdng</a></li>
+            
+                <li><a href="../classes/PromptRune.html">PromptRune</a></li>
+            
+                <li><a href="../classes/PromptTone.html">PromptTone</a></li>
+            
+                <li><a href="../classes/Recognizer.html">Recognizer</a></li>
+            
+                <li><a href="../classes/Router.html">Router</a></li>
+            
+                <li><a href="../classes/RouterAccountCreation.html">RouterAccountCreation</a></li>
+            
+                <li><a href="../classes/RouterAdmin.html">RouterAdmin</a></li>
+            
+                <li><a href="../classes/RouterLearningCenter.html">RouterLearningCenter</a></li>
+            
+                <li><a href="../classes/ScheduleItem.html">ScheduleItem</a></li>
+            
+                <li><a href="../classes/ScheduleItems.html">ScheduleItems</a></li>
+            
+                <li><a href="../classes/Shortstraw.html">Shortstraw</a></li>
+            
+                <li><a href="../classes/Sidebars.html">Sidebars</a></li>
+            
+                <li><a href="../classes/Strokes.html">Strokes</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TimerStopwatch.html">TimerStopwatch</a></li>
+            
+                <li><a href="../classes/User.html">User</a></li>
+            
+                <li><a href="../classes/UserData.html">UserData</a></li>
+            
+                <li><a href="../classes/UserSettings.html">UserSettings</a></li>
+            
+                <li><a href="../classes/UserStats.html">UserStats</a></li>
+            
+                <li><a href="../classes/UserSubscription.html">UserSubscription</a></li>
+            
+                <li><a href="../classes/VocabTable.html">VocabTable</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/Application.html">Application</a></li>
+            
+                <li><a href="../modules/Components.html">Components</a></li>
+            
+                <li><a href="../modules/Framework.html">Framework</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: www/application/Functions.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Application
+ */
+define([
+    &#x27;application/Bootstrap&#x27;,
+    &#x27;application/Mapper&#x27;,
+    &#x27;application/PinyinConverter&#x27;,
+    &#x27;application/Recognizer&#x27;,
+    &#x27;application/Shortstraw&#x27;
+], function(Bootstrap, Mapper, PinyinConverter, Recognizer, Shortstraw) {
+    /**
+     * @method addAllObjectAttributes
+     * @param {Array} array
+     * @param {String} attribute
+     * @returns {Number}
+     */
+    function addAllObjectAttributes(array, attribute) {
+        var total = 0;
+        for (var i = 0, length = array.length; i &lt; length; i++) {
+            if (array[i][attribute]) {
+                total += array[i][attribute];
+            }
+        }
+        return total;
+    }
+    /**
+     * @method arrayToJSON
+     * @param {Array} array
+     * @returns {Array}
+     */
+    function arrayToJSON(array) {
+        return array.map(function(data) {
+            return data.toJSON();
+        });
+    }
+    /**
+     * @method arrayToInt
+     * @param {Array} array
+     * @returns {Array}
+     */
+    function arrayToInt(array) {
+        return array.map(function(value) {
+            return parseInt(value, 10);
+        });
+    }
+    /**
+     * @method calculateInterval
+     * @param {Object} item
+     * @param {Number} score
+     * @param {Object} configs
+     * @returns {Number}
+     */
+    function calculateInterval(item, score, configs) {
+        var newInterval = null;
+        //return new items with randomized default config values
+        if (!item.last) {
+            switch (score) {
+                case 1:
+                    newInterval = configs.initialWrongInterval;
+                    break;
+                case 2:
+                    newInterval = configs.initialRightInterval / 5;
+                    break;
+                case 3:
+                    newInterval = configs.initialRightInterval;
+                    break;
+                case 4:
+                    newInterval = configs.initialRightInterval * 4;
+                    break;
+            }
+            return randomInterval(newInterval);
+        }
+        //set values for further calculations
+        var actualInterval = moment().unix() - item.last;
+        var factor = 0.9;
+        var pctRight = item.successes / item.reviews;
+        var scheduledInterval = item.next - item.last;
+        //get the factor
+        if (score === 2) {
+            factor = 0.9;
+        } else if (score === 4) {
+            factor = 3.5;
+        } else {
+            var factorsList = (score === 1) ? configs.wrongFactors : configs.rightFactors;
+            var divisions = [2, 1200, 18000, 691200];
+            var index;
+            for (var i in divisions) {
+                if (item.interval &gt; divisions[i]) {
+                    index = i;
+                }
+            }
+            factor = factorsList[index];
+        }
+        //adjust the factor based on readiness
+        if (score &gt; 2) {
+            factor -= 1;
+            factor *= actualInterval / scheduledInterval;
+            factor += 1;
+        }
+        //accelerate new items that appear to be known
+        if (item.successes === item.reviews &amp;&amp; item.reviews &lt; 5) {
+            factor *= 1.5;
+        }
+        //decelerate hard items consistently marked wrong
+        if (item.reviews &gt; 8) {
+            if (pctRight &lt; 0.5) {
+                factor *= Math.pow(pctRight, 0.7);
+            }
+        }
+        //multiple by the factor and randomize the interval
+        newInterval = randomInterval(item.interval * factor);
+        //bound the interval
+        if (score === 1) {
+            if (newInterval &gt; 604800) {
+                newInterval = 604800;
+            } else if (newInterval &lt; 30) {
+                newInterval = 30;
+            }
+        } else {
+            if (newInterval &gt; 315569260) {
+                newInterval = 315569260;
+            } else if (score === 2 &amp;&amp; newInterval &lt; 300) {
+                newInterval = 300;
+            } else if (newInterval &lt; 30) {
+                newInterval = 30;
+            }
+        }
+        return newInterval;
+    }
+    /**
+     * @property bootstrap
+     * @type Bootstrap
+     */
+    var bootstrap = Bootstrap;
+    /**
+     * @method convertBytesToSize
+     * @param {Number} bytes
+     * @returns {String}
+     */
+    function convertBytesToSize(bytes) {
+        var sizes = [&#x27;B&#x27;, &#x27;KB&#x27;, &#x27;MB&#x27;, &#x27;GB&#x27;, &#x27;TB&#x27;];
+        if (bytes &gt; 0) {
+            var value = parseFloat(Math.floor(Math.log(bytes) / Math.log(1024)));
+            return (bytes / Math.pow(1024, value)).toFixed(2) + &#x27; &#x27; + sizes[value];
+        }
+        return &#x27;0 B&#x27;;
+    }
+    /**
+     * @method convertTimeToClock
+     * @param {Number} time
+     */
+    function convertTimeToClock(time) {
+        var hours = (time / (3600 * 1000)) &gt;&gt; 0;
+        time = time % (3600 * 1000);
+        var minutes = (time / (60 * 1000)) &gt;&gt; 0;
+        time = time % (60 * 1000);
+        var seconds = (time / 1000) &gt;&gt; 0;
+        if (hours &gt; 0) {
+            return hours + &#x27;:&#x27; + pad(minutes, 0, 2) + &#x27;:&#x27; + pad(seconds, 0, 2);
+        }
+        return minutes + &#x27;:&#x27; + pad(seconds, 0, 2);
+    }
+    /**
+     * @method getAngle
+     * @param {Array|createjs.Point|Object} point1
+     * @param {createjs.Point|Object} point2
+     * @return {Number}
+     */
+    function getAngle(point1, point2) {
+        var p1 = Array.isArray(point1) ? point1[0] : point1;
+        var p2 = Array.isArray(point1) ? point1[point1.length - 1] : point2;
+        var xDiff = p2.x - p1.x;
+        var yDiff = p2.y - p1.y;
+        return (Math.atan2(yDiff, xDiff)) * (180 / Math.PI);
+    }
+    /**
+     * @method getBoundingRectangle
+     * @param {Array} points
+     * @param {Number} areaWidth
+     * @param {Number} areaHeight
+     * @param {Number} pointRadius
+     * @return {Object}
+     */
+    function getBoundingRectangle(points, areaWidth, areaHeight, pointRadius) {
+        var left = areaWidth;
+        var top = 0.0;
+        var right = 0.0;
+        var bottom = areaHeight;
+        for (var i = 0, length = points.length; i &lt; length; i++) {
+            var x = points[i].x;
+            var y = points[i].y;
+            if (x - pointRadius &lt; left)
+                left = x - pointRadius;
+            if (y + pointRadius &gt; top)
+                top = y + pointRadius;
+            if (x + pointRadius &gt; right)
+                right = x + pointRadius;
+            if (y - pointRadius &lt; bottom)
+                bottom = y - pointRadius;
+        }
+        var width = right - left;
+        var height = top - bottom;
+        var center = {x: width / 2 + left, y: height / 2 + bottom};
+        return {x: left, y: bottom, width: width, height: height, center: center};
+    }
+    /**
+     * @method getDistance
+     * @param {createjs.Point|Object} point1
+     * @param {createjs.Point|Object} point2
+     * @return {Number}
+     */
+    function getDistance(point1, point2) {
+        var xs = point2.x - point1.x;
+        xs = xs * xs;
+        var ys = point2.y - point1.y;
+        ys = ys * ys;
+        return Math.sqrt(xs + ys);
+    }
+    /**
+     * @method getGuid
+     * @returns {String}
+     */
+    function getGuid() {
+        return Math.floor((1 + Math.random()) * 0x100000000).toString(16).substring(1);
+    }
+    /**
+     * @method hasKana
+     * @param {String} text
+     * @returns {Boolean}
+     */
+    function hasKana(text) {
+        var chars = text.split(&#x27;&#x27;);
+        if (chars.length &gt; 0) {
+            for (var i = 0, length = chars.length; i &lt; length; i++) {
+                var charCode = text.charCodeAt(i);
+                if ((charCode &gt;= 12353 &amp;&amp; charCode &lt;= 12436) ||
+                    (charCode &gt;= 12449 &amp;&amp; charCode &lt;= 12540) ||
+                    charCode === 65374) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    /**
+     * @method isKana
+     * @param {String} text
+     * @returns {Boolean}
+     */
+    function isKana(text) {
+        var chars = text.split(&#x27;&#x27;);
+        if (chars.length &gt; 0) {
+            for (var i = 0, length = chars.length; i &lt; length; i++) {
+                var charCode = text.charCodeAt(i);
+                if (!(charCode &gt;= 12353 &amp;&amp; charCode &lt;= 12436) &amp;&amp;
+                    !(charCode &gt;= 12449 &amp;&amp; charCode &lt;= 12540) &amp;&amp;
+                    charCode !== 65374) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    /**
+     * @method imageExists
+     * @param {String} src
+     * @param {Function} callbackSuccess
+     * @param {Function} [callbackError]
+     */
+    function imageExists(src, callbackSuccess, callbackError) {
+        var image = new Image();
+        image.onload = function() {
+            callbackSuccess(image);
+        };
+        image.onerror = function() {
+            if (typeof callbackError === &#x27;function&#x27;) {
+                callbackError();
+            }
+        };
+        image.src = src;
+    }
+    /**
+     * @method isNumber
+     * @returns {Boolean}
+     */
+    function isNumber() {
+        return !isNaN(parseFloat(number)) &amp;&amp; isFinite(number);
+    }
+    /**
+     * @property mapper
+     * @typeof {Mapper}
+     */
+    var mapper = Mapper;
+    /**
+     * @method mergeObjectArrays
+     * @param {Object} object1
+     * @param {Object} object2
+     * @returns {Object}
+     */
+    function mergeObjectArrays(object1, object2) {
+        for (var key in object2) {
+            if (object1[key]) {
+                if (Array.isArray(object1[key])) {
+                    object1[key] = object1[key].concat(object2[key]);
+                } else {
+                    object1[key] = object2[key];
+                }
+            } else {
+                object1[key] = object2[key];
+            }
+        }
+        return object1;
+    }
+    /**
+     * @method pad
+     * @param {Number|String}
+     * @param {Number|String}
+     * @param {Number}
+     * @return {String}
+     */
+    function pad(text, value, size) {
+        value = &#x27;&#x27; + value;
+        var string = text + &#x27;&#x27;;
+        while (string.length &lt; size) {
+            string = value + &#x27;&#x27; + string;
+        }
+        return string;
+    }
+    /**
+     * @property pinyin
+     * @type {PinyinConverter}
+     */
+    var pinyin = PinyinConverter;
+    /**
+     * @method randomDecimal
+     * @param {Number} min
+     * @param {Number} max
+     * @returns {Number}
+     */
+    function randomDecimal(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+    /**
+     * @method randomInterval
+     * @param {Number} min
+     * @param {Number} max
+     * @returns {Number}
+     */
+    function randomInterval(value) {
+        return Math.round(value * (0.925 + (Math.random() * 0.15)));
+    }
+    /**
+     * @property recognizer
+     * @type {Recognizer}
+     */
+    var recognizer = new Recognizer();
+    /**
+     * @method segmentReading
+     * @param {String} reading
+     * @returns {Array}
+     */
+    function segmentReading(reading) {
+        var segments = [];
+        var variations = reading.split(&#x27;, &#x27;);
+        for (var a = 0, lengthA = variations.length; a &lt; lengthA; a++) {
+            var variation = variations[a];
+            segments.push(variation.match(/\s|[a-z|A-Z]+[1-5]+| ... |&#x27;/g));
+        }
+        return segments;
+    }
+    /**
+     * @property shortstraw
+     * @type Shortstraw
+     */
+    var shortstraw = new Shortstraw();
+    /**
+     * @method textToHTML
+     * @param {String} text
+     */
+    var textToHTML = function(text) {
+        if (text) {
+            return text.replace(/img:(http:\/\/\S+)/gi, &#x27;&lt;img src=&quot;$1&quot;/&gt;&#x27;)
+                .replace(/_([^ _][^_]*)_(?!\S{4})/gi, &#x27;&lt;em&gt;$1&lt;/em&gt;&#x27;)
+                .replace(/\n/gi, &#x27;&lt;br/&gt;&#x27;)
+                .replace(/\*([^*]+)\*/gi, &#x27;&lt;strong&gt;$1&lt;/strong&gt;&#x27;);
+        }
+        return &#x27;&#x27;;
+    };
+    /**
+     * @method toLowerCase
+     * @param {String} value
+     * @returns {String}
+     */
+    function toLowerCase(value) {
+        return value.toLowerCase();
+    }
+    /**
+     * @method toUpperCase
+     * @param {String} value
+     * @returns {String}
+     */
+    function toUpperCase(value) {
+        return value.toUpperCase();
+    }
+
+    return {
+        addAllObjectAttributes: addAllObjectAttributes,
+        arrayToInt: arrayToInt,
+        arrayToJSON: arrayToJSON,
+        bootstrap: bootstrap,
+        calculateInterval: calculateInterval,
+        convertTimeToClock: convertTimeToClock,
+        convertBytesToSize: convertBytesToSize,
+        getAngle: getAngle,
+        getBoundingRectangle: getBoundingRectangle,
+        getDistance: getDistance,
+        getGuid: getGuid,
+        hasKana: hasKana,
+        imageExists: imageExists,
+        isKana: isKana,
+        isNumber: isNumber,
+        mapper: mapper,
+        mergeObjectArrays: mergeObjectArrays,
+        pad: pad,
+        pinyin: pinyin,
+        randomDecimal: randomDecimal,
+        randomInterval: randomInterval,
+        recognizer: recognizer,
+        segmentReading: segmentReading,
+        shortstraw: shortstraw,
+        textToHTML: textToHTML,
+        toLowerCase: toLowerCase,
+        toUpperCase: toUpperCase
+    };
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

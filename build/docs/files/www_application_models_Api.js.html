@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>www/application/models/Api.js - skritter-html5</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="skritter-html5"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.2632</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Analytics.html">Analytics</a></li>
+            
+                <li><a href="../classes/Api.html">Api</a></li>
+            
+                <li><a href="../classes/Application.html">Application</a></li>
+            
+                <li><a href="../classes/Assets.html">Assets</a></li>
+            
+                <li><a href="../classes/BaseApplication.html">BaseApplication</a></li>
+            
+                <li><a href="../classes/BaseCollection.html">BaseCollection</a></li>
+            
+                <li><a href="../classes/BaseModel.html">BaseModel</a></li>
+            
+                <li><a href="../classes/BasePage.html">BasePage</a></li>
+            
+                <li><a href="../classes/BaseRouter.html">BaseRouter</a></li>
+            
+                <li><a href="../classes/BaseView.html">BaseView</a></li>
+            
+                <li><a href="../classes/Bootstrap.html">Bootstrap</a></li>
+            
+                <li><a href="../classes/CanvasCharacter.html">CanvasCharacter</a></li>
+            
+                <li><a href="../classes/CanvasStroke.html">CanvasStroke</a></li>
+            
+                <li><a href="../classes/CharacterEditor.html">CharacterEditor</a></li>
+            
+                <li><a href="../classes/DataDecomp.html">DataDecomp</a></li>
+            
+                <li><a href="../classes/DataDecomps.html">DataDecomps</a></li>
+            
+                <li><a href="../classes/DataItem.html">DataItem</a></li>
+            
+                <li><a href="../classes/DataItems.html">DataItems</a></li>
+            
+                <li><a href="../classes/DataParam.html">DataParam</a></li>
+            
+                <li><a href="../classes/DataParams.html">DataParams</a></li>
+            
+                <li><a href="../classes/DataReview.html">DataReview</a></li>
+            
+                <li><a href="../classes/DataReviews.html">DataReviews</a></li>
+            
+                <li><a href="../classes/DataSentence.html">DataSentence</a></li>
+            
+                <li><a href="../classes/DataSentences.html">DataSentences</a></li>
+            
+                <li><a href="../classes/DataSRSConfig.html">DataSRSConfig</a></li>
+            
+                <li><a href="../classes/DataSRSConfigs.html">DataSRSConfigs</a></li>
+            
+                <li><a href="../classes/DataStroke.html">DataStroke</a></li>
+            
+                <li><a href="../classes/DataStrokes.html">DataStrokes</a></li>
+            
+                <li><a href="../classes/DataVocab.html">DataVocab</a></li>
+            
+                <li><a href="../classes/DataVocabList.html">DataVocabList</a></li>
+            
+                <li><a href="../classes/DataVocabLists.html">DataVocabLists</a></li>
+            
+                <li><a href="../classes/DataVocabs.html">DataVocabs</a></li>
+            
+                <li><a href="../classes/Dialogs.html">Dialogs</a></li>
+            
+                <li><a href="../classes/IndexedDBAdapter.html">IndexedDBAdapter</a></li>
+            
+                <li><a href="../classes/Kana.html">Kana</a></li>
+            
+                <li><a href="../classes/ListRowTable.html">ListRowTable</a></li>
+            
+                <li><a href="../classes/ListSectionTable.html">ListSectionTable</a></li>
+            
+                <li><a href="../classes/ListTable.html">ListTable</a></li>
+            
+                <li><a href="../classes/Mapper.html">Mapper</a></li>
+            
+                <li><a href="../classes/PageAccount.html">PageAccount</a></li>
+            
+                <li><a href="../classes/PageCreateAccount.html">PageCreateAccount</a></li>
+            
+                <li><a href="../classes/PageDashboard.html">PageDashboard</a></li>
+            
+                <li><a href="../classes/PageExport.html">PageExport</a></li>
+            
+                <li><a href="../classes/PageFilters.html">PageFilters</a></li>
+            
+                <li><a href="../classes/PageLanding.html">PageLanding</a></li>
+            
+                <li><a href="../classes/PageLanguageSelect.html">PageLanguageSelect</a></li>
+            
+                <li><a href="../classes/PageLearningCenter.html">PageLearningCenter</a></li>
+            
+                <li><a href="../classes/PageList.html">PageList</a></li>
+            
+                <li><a href="../classes/PageLists.html">PageLists</a></li>
+            
+                <li><a href="../classes/PageListSection.html">PageListSection</a></li>
+            
+                <li><a href="../classes/PageListSelect.html">PageListSelect</a></li>
+            
+                <li><a href="../classes/PageLogin.html">PageLogin</a></li>
+            
+                <li><a href="../classes/PageScratchpad.html">PageScratchpad</a></li>
+            
+                <li><a href="../classes/PageSettings.html">PageSettings</a></li>
+            
+                <li><a href="../classes/PageStats.html">PageStats</a></li>
+            
+                <li><a href="../classes/PageStrokeOrder.html">PageStrokeOrder</a></li>
+            
+                <li><a href="../classes/PageStudy.html">PageStudy</a></li>
+            
+                <li><a href="../classes/PageTests.html">PageTests</a></li>
+            
+                <li><a href="../classes/PageWords.html">PageWords</a></li>
+            
+                <li><a href="../classes/ParamEditor.html">ParamEditor</a></li>
+            
+                <li><a href="../classes/Params.html">Params</a></li>
+            
+                <li><a href="../classes/PinyinConverter.html">PinyinConverter</a></li>
+            
+                <li><a href="../classes/Prompt.html">Prompt</a></li>
+            
+                <li><a href="../classes/PromptCanvas.html">PromptCanvas</a></li>
+            
+                <li><a href="../classes/PromptController.html">PromptController</a></li>
+            
+                <li><a href="../classes/PromptDefn.html">PromptDefn</a></li>
+            
+                <li><a href="../classes/PromptGradingButtons.html">PromptGradingButtons</a></li>
+            
+                <li><a href="../classes/PromptRdng.html">PromptRdng</a></li>
+            
+                <li><a href="../classes/PromptRune.html">PromptRune</a></li>
+            
+                <li><a href="../classes/PromptTone.html">PromptTone</a></li>
+            
+                <li><a href="../classes/Recognizer.html">Recognizer</a></li>
+            
+                <li><a href="../classes/Router.html">Router</a></li>
+            
+                <li><a href="../classes/RouterAccountCreation.html">RouterAccountCreation</a></li>
+            
+                <li><a href="../classes/RouterAdmin.html">RouterAdmin</a></li>
+            
+                <li><a href="../classes/RouterLearningCenter.html">RouterLearningCenter</a></li>
+            
+                <li><a href="../classes/ScheduleItem.html">ScheduleItem</a></li>
+            
+                <li><a href="../classes/ScheduleItems.html">ScheduleItems</a></li>
+            
+                <li><a href="../classes/Shortstraw.html">Shortstraw</a></li>
+            
+                <li><a href="../classes/Sidebars.html">Sidebars</a></li>
+            
+                <li><a href="../classes/Strokes.html">Strokes</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TimerStopwatch.html">TimerStopwatch</a></li>
+            
+                <li><a href="../classes/User.html">User</a></li>
+            
+                <li><a href="../classes/UserData.html">UserData</a></li>
+            
+                <li><a href="../classes/UserSettings.html">UserSettings</a></li>
+            
+                <li><a href="../classes/UserStats.html">UserStats</a></li>
+            
+                <li><a href="../classes/UserSubscription.html">UserSubscription</a></li>
+            
+                <li><a href="../classes/VocabTable.html">VocabTable</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/Application.html">Application</a></li>
+            
+                <li><a href="../modules/Components.html">Components</a></li>
+            
+                <li><a href="../modules/Framework.html">Framework</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: www/application/models/Api.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Application
+ */
+define([
+    &#x27;framework/BaseModel&#x27;
+], function(BaseModel) {
+    /**
+     * @class Api
+     * @extend BaseModel
+     */
+    var Api = BaseModel.extend({
+        /**
+         * @method initialize
+         * @constructor
+         */
+        initialize: function() {
+            if (JSON.parse(localStorage.getItem(&#x27;_guest&#x27;))) {
+                this.set(&#x27;guest&#x27;, JSON.parse(localStorage.getItem(&#x27;_guest&#x27;)), {silent: true});
+            }
+            this.on(&#x27;change:guest&#x27;, this.cache);
+        },
+        /**
+         * @property defaults
+         * @type Object
+         */
+        defaults: {
+            clientId: &#x27;mcfarljwapiclient&#x27;,
+            clientSecret: &#x27;e3872517fed90a820e441531548b8c&#x27;,
+            guest: undefined,
+            root: &#x27;https://www.skritter&#x27;,
+            timeout: 100,
+            tld: location.host.indexOf(&#x27;.cn&#x27;) === -1 ? &#x27;.com&#x27; : &#x27;.cn&#x27;,
+            version: 0
+        },
+        /**
+         * @method cache
+         */
+        cache: function() {
+            localStorage.setItem(&#x27;_guest&#x27;, JSON.stringify(this.toJSON().guest));
+        },
+        /**
+         * @method authenticateGuest
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        authenticateGuest: function(callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;oauth2/token&#x27;,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;POST&#x27;,
+                data: {
+                    grant_type: &#x27;client_credentials&#x27;,
+                    client_id: this.get(&#x27;clientId&#x27;)
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    data.expires = moment().unix() + data.expires_in;
+                    this.set(&#x27;guest&#x27;, data);
+                    callbackComplete(data);
+                } else {
+                    callbackError(data);
+                }
+
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method addMissing
+         * @param {Array|String} vocabIds
+         * @param {Object} [options]
+         * @param {Function} [callbackComplete]
+         * @param {Function} [callbackError]
+         * @param {Function} [callbackResult]
+         */
+        addMissing: function(vocabIds, options, callbackComplete, callbackError, callbackResult) {
+            var self = this;
+            vocabIds = Array.isArray(vocabIds) ? vocabIds : [vocabIds];
+            (function next() {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;items/addmissing&#x27; +
+                    &#x27;?bearer_token=&#x27; + self.getToken() +
+                    &#x27;&amp;vocabId=&#x27; + vocabIds.splice(0, 1)[0],
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;POST&#x27;
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        delete data.statusCode;
+                        if (typeof callbackResult === &#x27;function&#x27;) {
+                            callbackResult(data);
+                        }
+                        if (vocabIds.length) {
+                            setTimeout(next, this.timeout);
+                        } else {
+                            callbackComplete();
+                        }
+
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method authenticateUser
+         * @param {String} username
+         * @param {String} password
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        authenticateUser: function(username, password, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;oauth2/token&#x27;,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;POST&#x27;,
+                data: {
+                    grant_type: &#x27;password&#x27;,
+                    client_id: this.get(&#x27;clientId&#x27;),
+                    username: username,
+                    password: password
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method beforeSend
+         * @param {jqXHR} xhr
+         */
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader(&#x27;Authorization&#x27;, this.getCredentials());
+        },
+        /**
+         * @method getBatch
+         * @param {String} batchId
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         * @param {Function} [callbackResult]
+         */
+        checkBatch: function(batchId, callbackComplete, callbackError, callbackResult) {
+            var self = this;
+            (function wait() {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;batch/&#x27; + batchId + &#x27;/status&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;GET&#x27;,
+                    data: {
+                        bearer_token: self.getToken(),
+                        detailed: true
+                    }
+                }).done(function(data) {
+                    if (data.Batch &amp;&amp; data.statusCode === 200) {
+                        data.Batch.responseSize = app.fn.addAllObjectAttributes(data.Batch.Requests, &#x27;responseSize&#x27;);
+                        if (data.Batch.runningRequests &gt; 0) {
+                            if (typeof callbackResult === &#x27;function&#x27;) {
+                                callbackResult(data.Batch);
+                            }
+                            setTimeout(wait, 5000);
+                        } else {
+                            if (typeof callbackResult === &#x27;function&#x27;) {
+                                callbackResult(data.Batch);
+                            }
+                            callbackComplete(_.pluck(data.Batch.Requests, &#x27;id&#x27;));
+                        }
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method checkConnection
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        checkConnection: function(callbackComplete, callbackError) {
+            this.getDate(function(result) {
+                callbackComplete(result.serverTime);
+            }, function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method clearGuest
+         */
+        clearGuest: function() {
+            this.set(&#x27;guest&#x27;, false);
+            localStorage.removeItem(&#x27;_guest&#x27;);
+        },
+        /**
+         * @method createUser
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        createUser: function(options, callbackComplete, callbackError) {
+            options = options ? options : {};
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;users&#x27;,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;POST&#x27;,
+                data: {
+                    bearer_token: this.getToken(),
+                    fields: options.fields,
+                    lang: options.lang
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.User);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method createVocabList
+         * @param {Object} list
+         * @param {Function} callbackComplete
+         * @param {Function} [callbackError]
+         */
+        createVocabList: function(list, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl()  + &#x27;vocablists?bearer_token=&#x27; + this.getToken(),
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;POST&#x27;,
+                data: JSON.stringify(list)
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.VocabList);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method getBaseUrl
+         * @returns {String}
+         */
+        getBaseUrl: function() {
+            return this.get(&#x27;root&#x27;) + this.get(&#x27;tld&#x27;) + &#x27;/api/v&#x27; + this.get(&#x27;version&#x27;) + &#x27;/&#x27;;
+        },
+        /**
+         * @method getBatch
+         * @param {String} batchId
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         * @param {Function} callbackResult
+         */
+        getBatch: function(batchId, callbackComplete, callbackError, callbackResult) {
+            var self = this;
+            var downloadedRequests = 0;
+            var batchSize = 29;
+            async.waterfall([
+                function(callback) {
+                    self.checkBatch(batchId, function(requestIds) {
+                        callback(null, requestIds);
+                    }, function(error) {
+                        callback(error);
+                    });
+                },
+                function(requestIds, callback) {
+                    (function download() {
+                        $.ajax({
+                            url: self.getBaseUrl() + &#x27;batch/&#x27; + batchId,
+                            beforeSend: self.beforeSend,
+                            context: self,
+                            type: &#x27;GET&#x27;,
+                            data: {
+                                bearer_token: self.getToken(),
+                                request_ids: requestIds.slice(0, batchSize).join(&#x27;,&#x27;)
+                            }
+                        }).done(function(data) {
+                            var result = {};
+                            result.responseSize = 0;
+                            if (data.statusCode === 200) {
+                                for (var i = 0, length = data.Batch.Requests.length; i &lt; length; i++) {
+                                    if (typeof data.Batch.Requests[i].response === &#x27;object&#x27;) {
+                                        result = app.fn.mergeObjectArrays(result, data.Batch.Requests[i].response);
+                                        result.responseSize += data.Batch.Requests[i].responseSize;
+                                    }
+                                    downloadedRequests++;
+                                }
+                                if (result &amp;&amp; result.statusCode === 200) {
+                                    delete result.cursor;
+                                    delete result.statusCode;
+                                    result.downloadedRequests = downloadedRequests;
+                                    result.totalRequests = data.Batch.totalRequests;
+                                    requestIds.splice(0, batchSize);
+                                    callbackResult(result);
+                                    if (requestIds.length &gt; 0) {
+                                        setTimeout(download, self.get(&#x27;timeout&#x27;));
+                                    } else {
+                                        callback();
+                                    }
+                                } else {
+                                    callbackError(result);
+                                }
+                            } else {
+                                callback(data);
+                            }
+                        }).fail(function(error) {
+                            callback(error);
+                        });
+                    })();
+                }
+            ], function(error) {
+                if (error) {
+                    callbackError(error);
+                } else {
+                    callbackComplete();
+                }
+            });
+        },
+        /**
+         * @method getCredentials
+         * @returns {String}
+         */
+        getCredentials: function() {
+            return &#x27;basic &#x27; + btoa(this.get(&#x27;clientId&#x27;) + &#x27;:&#x27; + this.get(&#x27;clientSecret&#x27;));
+        },
+        /**
+         * @method getDate
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getDate: function(callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;dateinfo&#x27;,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;GET&#x27;,
+                data: {
+                    bearer_token: this.getToken()
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    delete data.statusCode;
+                    callbackComplete(data);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method getGuest
+         * @param {String} key
+         * @returns {Object}
+         */
+        getGuest: function(key) {
+            return this.get(&#x27;guest&#x27;) ? this.get(&#x27;guest&#x27;)[key] : undefined;
+        },
+        /**
+         * @method getItemById
+         * @param {Array|String} itemIds
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getItemById: function(itemIds, options, callbackComplete, callbackError) {
+            var self = this;
+            var result = {};
+            options = options ? options : {};
+            itemIds = _.uniq(Array.isArray(itemIds) ? itemIds : [itemIds]);
+            (function next() {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;items&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;GET&#x27;,
+                    data: {
+                        bearer_token: self.getToken(),
+                        lang: options.lang || app.user.getLanguageCode(),
+                        ids: itemIds.splice(0, 19).join(&#x27;|&#x27;),
+                        fields: options.fields,
+                        include_decomps: options.includeDecomps ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_heisigs: options.includeHeisigs ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_strokes: options.includeStrokes ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_sentences: options.includeSentences ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_top_mnemonics: options.includeTopMnemonics ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_vocabs: options.includeVocabs ? &#x27;true&#x27; : &#x27;false&#x27;
+                    }
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        delete data.statusCode;
+                        result = app.fn.mergeObjectArrays(result, data);
+                        if (itemIds.length &gt; 0) {
+                            setTimeout(next, self.timeout);
+                        } else {
+                            callbackComplete(result);
+                        }
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method getItemByOffset
+         * @param {Array|String} itemIds
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getItemByOffset: function(offset, options, callbackComplete, callbackError) {
+            var self = this;
+            var result = {};
+            options = options ? options : {};
+            (function next(cursor) {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;items&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;GET&#x27;,
+                    data: {
+                        bearer_token: self.getToken(),
+                        lang: options.lang || app.user.getLanguageCode(),
+                        cursor: cursor,
+                        sort: &#x27;changed&#x27;,
+                        offset: offset,
+                        fields: options.fields,
+                        include_decomps: options.includeDecomps ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_heisigs: options.includeHeisigs ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_strokes: options.includeStrokes ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_sentences: options.includeSentences ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_top_mnemonics: options.includeTopMnemonics ? &#x27;true&#x27; : &#x27;false&#x27;,
+                        include_vocabs: options.includeVocabs ? &#x27;true&#x27; : &#x27;false&#x27;
+                    }
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        delete data.statusCode;
+                        result = app.fn.mergeObjectArrays(result, data);
+                        if (data.cursor) {
+                            setTimeout(next, self.timeout, data.cursor);
+                        } else {
+                            callbackComplete(result);
+                        }
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method getReviewErrors
+         * @param {Number} [offset]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getReviewErrors: function(offset, callbackComplete, callbackError) {
+            var self = this;
+            var errors = [];
+            (function next(cursor) {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;reviews/errors&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;GET&#x27;,
+                    data: {
+                        bearer_token: self.getToken(),
+                        cursor: cursor,
+                        offset: offset
+                    }
+                }).done(function(data) {
+                    errors = errors.concat(data.ReviewErrors);
+                    if (data.statusCode === 200) {
+                        if (data.cursor) {
+                            setTimeout(next, self.timeout, data.cursor);
+                        } else {
+                            callbackComplete(errors);
+                        }
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method getStats
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getStats: function(options, callbackComplete, callbackError) {
+            options = options ? options : {};
+            options.start = options.start ? options.start : moment().format(&#x27;YYYY-MM-DD&#x27;);
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;progstats&#x27;,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;GET&#x27;,
+                data: {
+                    bearer_token: this.getToken(),
+                    lang: options.lang || app.user.getLanguageCode(),
+                    start: options.start,
+                    end: options.end,
+                    step: options.step,
+                    fields: options.fields
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.ProgressStats);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method getUserSubscription
+         * @param {String} userId
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getSubscription: function(userId, options, callbackComplete, callbackError) {
+            options = options ? options : {};
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;subscriptions/&#x27; + userId,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;GET&#x27;,
+                data: {
+                    bearer_token: this.getToken(),
+                    fields: options.fields
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete($.extend(data.Subscription, data.Payment));
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method getToken
+         */
+        getToken: function() {
+            if (app.user.data.get(&#x27;access_token&#x27;)) {
+                //return token for registered user if logged in
+                return app.user.data.get(&#x27;access_token&#x27;);
+            } else if (this.isGuestValid()) {
+                //return token for guest user if not expired
+                return this.get(&#x27;guest&#x27;).access_token;
+            }
+            return undefined;
+        },
+        /**
+         * @method getUsers
+         * @param {Array|String} userIds
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getUsers: function(userIds, options, callbackComplete, callbackError) {
+            var self = this;
+            var users = [];
+            options = options ? option : {};
+            userIds = Array.isArray(userIds) ? userIds : [userIds];
+            (function next() {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;users&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;GET&#x27;,
+                    data: {
+                        bearer_token: self.getToken(),
+                        ids: userIds.splice(0, 9).join(&#x27;,&#x27;),
+                        fields: options.fields
+                    }
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        users = users.concat(data.Users);
+                        if (userIds.length &gt; 0) {
+                            setTimeout(next, self.get(&#x27;timeout&#x27;));
+                        } else {
+                            if (users.length === 1) {
+                                callbackComplete(users[0]);
+                            } else {
+                                callbackComplete(users);
+                            }
+                        }
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method getVocabById
+         * @param {Array|String} vocabIds
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getVocabById: function(vocabIds, options, callbackComplete, callbackError) {
+            var self = this;
+            var result = {};
+            options = options ? options : {};
+            vocabIds = _.uniq(Array.isArray(vocabIds) ? vocabIds : [vocabIds]);
+            (function next() {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;vocabs&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;GET&#x27;,
+                    data: {
+                        bearer_token: self.getToken(),
+                        lang: options.lang || app.user.getLanguageCode(),
+                        ids: vocabIds.splice(0, 19).join(&#x27;|&#x27;),
+                        fields: options.fields,
+                        include_strokes: options.includeStrokes,
+                        include_sentences: options.includeSentences,
+                        include_heisigs: options.includeHeisigs,
+                        include_top_mnemonics: options.includeTopMnemonics,
+                        include_decomps: options.includeDecomps
+                    }
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        delete data.statusCode;
+                        result = app.fn.mergeObjectArrays(result, data);
+                        if (vocabIds.length &gt; 0) {
+                            setTimeout(next, self.timeout);
+                        } else {
+                            callbackComplete(result);
+                        }
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method getVocabByQuery
+         * @param {Array|String} vocabIds
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getVocabByQuery: function(query, options, callbackComplete, callbackError) {
+            options = options ? options : {};
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;vocabs&#x27;,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;GET&#x27;,
+                data: {
+                    bearer_token: this.getToken(),
+                    lang: options.lang || app.user.getLanguageCode(),
+                    q: query,
+                    fields: options.fields,
+                    include_strokes: options.includeStrokes,
+                    include_sentences: options.includeSentences,
+                    include_heisigs: options.includeHeisigs,
+                    include_top_mnemonics: options.includeTopMnemonics,
+                    include_decomps: options.includeDecomps
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method getVocabList
+         * @param {String} listId
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getVocabList: function(listId, options, callbackComplete, callbackError) {
+            options = options ? options : {};
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;vocablists/&#x27; + listId,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;GET&#x27;,
+                data: {
+                    bearer_token: this.getToken(),
+                    lang: options.lang || app.user.getLanguageCode(),
+                    fields: options.fields,
+                    sectionFields: options.sectionFields
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.VocabList);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method getVocabListSection
+         * @param {String} listId
+         * @param {String} sectionId
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getVocabListSection: function(listId, sectionId, options, callbackComplete, callbackError) {
+            options = options ? options : {};
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;vocablists/&#x27; + listId + &#x27;/sections/&#x27; + sectionId,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;GET&#x27;,
+                data: {
+                    bearer_token: this.getToken(),
+                    fields: options.fields
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.VocabListSection);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method getVocabLists
+         * @param {Object} [callback]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        getVocabLists: function(options, callbackComplete, callbackError) {
+            var self = this;
+            var lists = [];
+            options = options ? options : {};
+            (function next(cursor) {
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;vocablists&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;GET&#x27;,
+                    data: {
+                        bearer_token: self.getToken(),
+                        lang: options.lang || app.user.getLanguageCode(),
+                        cursor: cursor,
+                        sort: options.sort,
+                        fields: options.fields
+                    }
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        lists = lists.concat(data.VocabLists);
+                        if (data.cursor) {
+                            setTimeout(next, self.get(&#x27;timeout&#x27;), data.cursor);
+                        } else {
+                            callbackComplete(lists);
+                        }
+                    } else {
+                        callbackError(data);
+                    }
+                }).fail(function(error) {
+                    callbackError(error);
+                });
+            })();
+        },
+        /**
+         * @method hasGuest
+         * @returns {Boolean}
+         */
+        hasGuest: function() {
+            return this.get(&#x27;guest&#x27;) ? true : false;
+        },
+        /**
+         * @method isGuestValid
+         */
+        isGuestValid: function() {
+            if (this.get(&#x27;guest&#x27;) &amp;&amp; (this.get(&#x27;guest&#x27;).expires &gt; moment().unix())) {
+                return true;
+            }
+            this.set(&#x27;guest&#x27;, undefined, {silent: true});
+            localStorage.removeItem(&#x27;_guest&#x27;);
+            return false;
+        },
+        /**
+         * @method postReviews
+         * @param {Array} reviews
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        postReviews: function(reviews, callbackComplete, callbackError) {
+            var self = this;
+            var posted = [];
+            (function next() {
+                var batch = _.flatten(reviews.splice(0, 49));
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;reviews&#x27; +
+                    &#x27;?bearer_token=&#x27; + self.getToken() +
+                    &#x27;&amp;spaceItems=false&#x27;,
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;POST&#x27;,
+                    data: JSON.stringify(batch)
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        posted = posted.concat(batch);
+                        if (reviews.length &gt; 0) {
+                            setTimeout(next, self.timeout);
+                        } else {
+                            callbackComplete(posted);
+                        }
+                    } else {
+                        callbackError(data, posted);
+                    }
+                }).fail(function(error) {
+                    callbackError(error, posted);
+                });
+            })();
+        },
+        /**
+         * @method refreshToken
+         * @param {String} token
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        refreshToken: function(token, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;oauth2/token&#x27;,
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;POST&#x27;,
+                data: {
+                    grant_type: &#x27;refresh_token&#x27;,
+                    client_id: this.get(&#x27;clientId&#x27;),
+                    refresh_token: token
+                }
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method requestBatch
+         * @param {Array|Object} requests
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        requestBatch: function(requests, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;batch&#x27; +
+                &#x27;?bearer_token=&#x27; + this.getToken(),
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;POST&#x27;,
+                data: JSON.stringify(Array.isArray(requests) ? requests : [requests])
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.Batch);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method resetAccount
+         * @param {Object} [options]
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        resetAccount: function(options, callbackComplete, callbackError) {
+            options = options ? options : {};
+            options.lang = options.lang ? options.lang : app.user.getLanguageCode();
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;reset&#x27; +
+                &#x27;?lang=&#x27; + options.lang +
+                &#x27;&amp;bearer_token=&#x27; + this.getToken(),
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;POST&#x27;
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method setGuest
+         * @param {String} key
+         * @param {Array|Object|String} value
+         * @returns {Api}
+         */
+        setGuest: function(key, value) {
+            this.attributes.guest[key] = value;
+            this.trigger(&#x27;change:guest&#x27;);
+            return this;
+        },
+        /**
+         * @method updateSubscription
+         * @param {Object} subscription
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        updateSubscription: function(subscription, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;subscriptions/&#x27; + app.user.id +
+                &#x27;?bearer_token=&#x27; + this.getToken(),
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;PUT&#x27;,
+                data: JSON.stringify(subscription)
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.Subscription);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method updateVocabList
+         * @param {Object} list
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        updateVocabList: function(list, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl()  + &#x27;vocablists/&#x27; + list.id +
+                &#x27;?bearer_token=&#x27; + this.getToken(),
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;PUT&#x27;,
+                data: JSON.stringify(list)
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.VocabList);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method updateVocabListSection
+         * @param {Object} list
+         * @param {Object} section
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        updateVocabListSection: function(list, section, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl()  + &#x27;vocablists/&#x27; + list.id + &#x27;/sections/&#x27; + section.id +
+                &#x27;?bearer_token=&#x27; + this.getToken(),
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;PUT&#x27;,
+                data: JSON.stringify(section)
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.VocabListSection);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method updateUser
+         * @param {Object} settings
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         */
+        updateUser: function(settings, callbackComplete, callbackError) {
+            $.ajax({
+                url: this.getBaseUrl() + &#x27;users&#x27; +
+                &#x27;?bearer_token=&#x27; + this.getToken(),
+                beforeSend: this.beforeSend,
+                context: this,
+                type: &#x27;PUT&#x27;,
+                data: JSON.stringify(settings)
+            }).done(function(data) {
+                if (data.statusCode === 200) {
+                    callbackComplete(data.User);
+                } else {
+                    callbackError(data);
+                }
+            }).fail(function(error) {
+                callbackError(error);
+            });
+        },
+        /**
+         * @method updateVocabs
+         * @param {Array|Object} vocabs
+         * @param {Function} callbackComplete
+         * @param {Function} callbackError
+         * @param {Function} callbackResult
+         */
+        updateVocabs: function(vocabs, callbackComplete, callbackError, callbackResult) {
+            var self = this;
+            var updated = [];
+            vocabs = Array.isArray(vocabs) ? vocabs : [vocabs];
+            vocabs = _.without(vocabs, undefined);
+            (function next() {
+                var vocab = vocabs.splice(0, 1)[0];
+                $.ajax({
+                    url: self.getBaseUrl() + &#x27;vocabs/&#x27; + vocab.id +
+                    &#x27;?bearer_token=&#x27; + self.getToken(),
+                    beforeSend: self.beforeSend,
+                    context: self,
+                    type: &#x27;PUT&#x27;,
+                    data: JSON.stringify(vocab)
+                }).done(function(data) {
+                    if (data.statusCode === 200) {
+                        updated.push(data.Vocab.id);
+                        callbackResult({
+                            Items: data.Items,
+                            Vocab: data.Vocab
+                        });
+                        if (vocabs.length &gt; 0) {
+                            setTimeout(next, self.timeout);
+                        } else {
+                            callbackComplete(updated);
+                        }
+                    } else {
+                        callbackError(data, updated);
+                    }
+                }).fail(function(error) {
+                    callbackError(error, updated);
+                });
+            })();
+        }
+    });
+
+    return Api;
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

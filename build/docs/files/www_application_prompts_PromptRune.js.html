@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>www/application/prompts/PromptRune.js - skritter-html5</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="skritter-html5"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.2632</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Analytics.html">Analytics</a></li>
+            
+                <li><a href="../classes/Api.html">Api</a></li>
+            
+                <li><a href="../classes/Application.html">Application</a></li>
+            
+                <li><a href="../classes/Assets.html">Assets</a></li>
+            
+                <li><a href="../classes/BaseApplication.html">BaseApplication</a></li>
+            
+                <li><a href="../classes/BaseCollection.html">BaseCollection</a></li>
+            
+                <li><a href="../classes/BaseModel.html">BaseModel</a></li>
+            
+                <li><a href="../classes/BasePage.html">BasePage</a></li>
+            
+                <li><a href="../classes/BaseRouter.html">BaseRouter</a></li>
+            
+                <li><a href="../classes/BaseView.html">BaseView</a></li>
+            
+                <li><a href="../classes/Bootstrap.html">Bootstrap</a></li>
+            
+                <li><a href="../classes/CanvasCharacter.html">CanvasCharacter</a></li>
+            
+                <li><a href="../classes/CanvasStroke.html">CanvasStroke</a></li>
+            
+                <li><a href="../classes/CharacterEditor.html">CharacterEditor</a></li>
+            
+                <li><a href="../classes/DataDecomp.html">DataDecomp</a></li>
+            
+                <li><a href="../classes/DataDecomps.html">DataDecomps</a></li>
+            
+                <li><a href="../classes/DataItem.html">DataItem</a></li>
+            
+                <li><a href="../classes/DataItems.html">DataItems</a></li>
+            
+                <li><a href="../classes/DataParam.html">DataParam</a></li>
+            
+                <li><a href="../classes/DataParams.html">DataParams</a></li>
+            
+                <li><a href="../classes/DataReview.html">DataReview</a></li>
+            
+                <li><a href="../classes/DataReviews.html">DataReviews</a></li>
+            
+                <li><a href="../classes/DataSentence.html">DataSentence</a></li>
+            
+                <li><a href="../classes/DataSentences.html">DataSentences</a></li>
+            
+                <li><a href="../classes/DataSRSConfig.html">DataSRSConfig</a></li>
+            
+                <li><a href="../classes/DataSRSConfigs.html">DataSRSConfigs</a></li>
+            
+                <li><a href="../classes/DataStroke.html">DataStroke</a></li>
+            
+                <li><a href="../classes/DataStrokes.html">DataStrokes</a></li>
+            
+                <li><a href="../classes/DataVocab.html">DataVocab</a></li>
+            
+                <li><a href="../classes/DataVocabList.html">DataVocabList</a></li>
+            
+                <li><a href="../classes/DataVocabLists.html">DataVocabLists</a></li>
+            
+                <li><a href="../classes/DataVocabs.html">DataVocabs</a></li>
+            
+                <li><a href="../classes/Dialogs.html">Dialogs</a></li>
+            
+                <li><a href="../classes/IndexedDBAdapter.html">IndexedDBAdapter</a></li>
+            
+                <li><a href="../classes/Kana.html">Kana</a></li>
+            
+                <li><a href="../classes/ListRowTable.html">ListRowTable</a></li>
+            
+                <li><a href="../classes/ListSectionTable.html">ListSectionTable</a></li>
+            
+                <li><a href="../classes/ListTable.html">ListTable</a></li>
+            
+                <li><a href="../classes/Mapper.html">Mapper</a></li>
+            
+                <li><a href="../classes/PageAccount.html">PageAccount</a></li>
+            
+                <li><a href="../classes/PageCreateAccount.html">PageCreateAccount</a></li>
+            
+                <li><a href="../classes/PageDashboard.html">PageDashboard</a></li>
+            
+                <li><a href="../classes/PageExport.html">PageExport</a></li>
+            
+                <li><a href="../classes/PageFilters.html">PageFilters</a></li>
+            
+                <li><a href="../classes/PageLanding.html">PageLanding</a></li>
+            
+                <li><a href="../classes/PageLanguageSelect.html">PageLanguageSelect</a></li>
+            
+                <li><a href="../classes/PageLearningCenter.html">PageLearningCenter</a></li>
+            
+                <li><a href="../classes/PageList.html">PageList</a></li>
+            
+                <li><a href="../classes/PageLists.html">PageLists</a></li>
+            
+                <li><a href="../classes/PageListSection.html">PageListSection</a></li>
+            
+                <li><a href="../classes/PageListSelect.html">PageListSelect</a></li>
+            
+                <li><a href="../classes/PageLogin.html">PageLogin</a></li>
+            
+                <li><a href="../classes/PageScratchpad.html">PageScratchpad</a></li>
+            
+                <li><a href="../classes/PageSettings.html">PageSettings</a></li>
+            
+                <li><a href="../classes/PageStats.html">PageStats</a></li>
+            
+                <li><a href="../classes/PageStrokeOrder.html">PageStrokeOrder</a></li>
+            
+                <li><a href="../classes/PageStudy.html">PageStudy</a></li>
+            
+                <li><a href="../classes/PageTests.html">PageTests</a></li>
+            
+                <li><a href="../classes/PageWords.html">PageWords</a></li>
+            
+                <li><a href="../classes/ParamEditor.html">ParamEditor</a></li>
+            
+                <li><a href="../classes/Params.html">Params</a></li>
+            
+                <li><a href="../classes/PinyinConverter.html">PinyinConverter</a></li>
+            
+                <li><a href="../classes/Prompt.html">Prompt</a></li>
+            
+                <li><a href="../classes/PromptCanvas.html">PromptCanvas</a></li>
+            
+                <li><a href="../classes/PromptController.html">PromptController</a></li>
+            
+                <li><a href="../classes/PromptDefn.html">PromptDefn</a></li>
+            
+                <li><a href="../classes/PromptGradingButtons.html">PromptGradingButtons</a></li>
+            
+                <li><a href="../classes/PromptRdng.html">PromptRdng</a></li>
+            
+                <li><a href="../classes/PromptRune.html">PromptRune</a></li>
+            
+                <li><a href="../classes/PromptTone.html">PromptTone</a></li>
+            
+                <li><a href="../classes/Recognizer.html">Recognizer</a></li>
+            
+                <li><a href="../classes/Router.html">Router</a></li>
+            
+                <li><a href="../classes/RouterAccountCreation.html">RouterAccountCreation</a></li>
+            
+                <li><a href="../classes/RouterAdmin.html">RouterAdmin</a></li>
+            
+                <li><a href="../classes/RouterLearningCenter.html">RouterLearningCenter</a></li>
+            
+                <li><a href="../classes/ScheduleItem.html">ScheduleItem</a></li>
+            
+                <li><a href="../classes/ScheduleItems.html">ScheduleItems</a></li>
+            
+                <li><a href="../classes/Shortstraw.html">Shortstraw</a></li>
+            
+                <li><a href="../classes/Sidebars.html">Sidebars</a></li>
+            
+                <li><a href="../classes/Strokes.html">Strokes</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TimerStopwatch.html">TimerStopwatch</a></li>
+            
+                <li><a href="../classes/User.html">User</a></li>
+            
+                <li><a href="../classes/UserData.html">UserData</a></li>
+            
+                <li><a href="../classes/UserSettings.html">UserSettings</a></li>
+            
+                <li><a href="../classes/UserStats.html">UserStats</a></li>
+            
+                <li><a href="../classes/UserSubscription.html">UserSubscription</a></li>
+            
+                <li><a href="../classes/VocabTable.html">VocabTable</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/Application.html">Application</a></li>
+            
+                <li><a href="../modules/Components.html">Components</a></li>
+            
+                <li><a href="../modules/Framework.html">Framework</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: www/application/prompts/PromptRune.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Application
+ */
+define([
+    &#x27;prompts/Prompt&#x27;,
+    &#x27;require.text!templates/prompts/prompt-rune.html&#x27;
+], function(Prompt, DesktopTemplate) {
+    /**
+     * @class PromptRune
+     * @extends {Prompt}
+     */
+    var PromptRune = Prompt.extend({
+        /**
+         * @method initialize
+         * @param {Object} [options]
+         * @param {PromptController} controller
+         * @param {DataReview} review
+         * @constructor
+         */
+        initialize: function(options, controller, review) {
+            Prompt.prototype.initialize.call(this, options, controller, review);
+            this.attempts = 0;
+            this.character = undefined;
+            this.maxAttempts = 3;
+            this.revealed = false;
+            this.taps = 0;
+        },
+        /**
+         * @method render
+         * @returns {PromptRune}
+         */
+        render: function() {
+            app.timer.setLimits(30, 15);
+            this.$el.html(this.compile(DesktopTemplate));
+            this.elements.toolbar = this.$(&#x27;.prompt-toolbar&#x27;);
+            this.elements.toolbarEraser = this.$(&#x27;#toolbar-eraser&#x27;);
+            this.elements.toolbarReveal = this.$(&#x27;#toolbar-reveal&#x27;);
+            this.attempts = 0;
+            this.taps = 0;
+            Prompt.prototype.render.call(this);
+            this.canvas.getLayer(&#x27;stroke&#x27;).alpha = 1;
+            this.canvas.showGrid().show();
+            return this;
+        },
+        /**
+         * @method renderAnswer
+         * @returns {PromptRune}
+         */
+        renderAnswer: function() {
+            Prompt.prototype.renderAnswer.call(this);
+            this.canvas.disableInput();
+            if (app.user.settings.isAudioEnabled() &amp;&amp; app.user.settings.get(&#x27;hideReading&#x27;) &amp;&amp; this.review.isLast()) {
+                this.vocab.playAudio();
+            }
+            this.elements.fieldDefinition.html(this.vocab.getDefinition());
+            if (app.user.settings.get(&#x27;showHeisig&#x27;) &amp;&amp; this.vocab.has(&#x27;heisigDefinition&#x27;)) {
+                this.elements.fieldHeisig.text(&#x27;Keyword: &#x27; + this.vocab.get(&#x27;heisigDefinition&#x27;));
+            }
+            if (this.vocab.isJapanese() &amp;&amp; app.fn.hasKana(this.vocab.get(&#x27;writing&#x27;))) {
+                if (app.fn.isKana(this.vocab.get(&#x27;writing&#x27;))) {
+                    this.elements.fieldReading.empty();
+                } else if (this.review.isLast()) {
+                    this.elements.fieldReading.html(this.vocab.getReading(null, {
+                        hide: this.review.isLast() ? false : app.user.settings.get(&#x27;hideReading&#x27;),
+                        style: app.user.settings.get(&#x27;readingStyle&#x27;)
+                    }));
+                } else {
+                    this.elements.fieldReading.html(this.vocab.getReading(null, {
+                        hide: app.user.settings.get(&#x27;hideReading&#x27;),
+                        hideKana: app.user.settings.get(&#x27;studyKana&#x27;) ? this.vocab.getKana() : [],
+                        style: app.user.settings.get(&#x27;readingStyle&#x27;)
+                    }));
+                }
+            } else {
+                this.elements.fieldReading.html(this.vocab.getReading(app.user.settings.get(&#x27;hideReading&#x27;) ? this.position + 1 : null, {
+                    hide: this.review.isLast() ? false : app.user.settings.get(&#x27;hideReading&#x27;),
+                    style: app.user.settings.get(&#x27;readingStyle&#x27;)
+                }));
+            }
+            this.elements.fieldWriting.html(this.vocab.getWriting(this.position + 1, {classes: &#x27;highlight&#x27;}));
+            if (app.user.settings.get(&#x27;gradingColor&#x27;)) {
+                var layer = app.user.settings.get(&#x27;squigs&#x27;) ? &#x27;background&#x27; : &#x27;stroke&#x27;;
+                this.canvas.injectLayerColor(layer, app.user.settings.get(&#x27;gradingColors&#x27;)[this.review.getAt(&#x27;score&#x27;) - 1]);
+            }
+            return this;
+        },
+        /**
+         * @method renderQuestion
+         * @returns {PromptRune}
+         */
+        renderQuestion: function() {
+            Prompt.prototype.renderQuestion.call(this);
+            if (app.user.settings.isAudioEnabled() &amp;&amp; !app.user.settings.get(&#x27;hideReading&#x27;) &amp;&amp; this.review.isFirst()) {
+                this.vocab.playAudio();
+            }
+            this.canvas.enableInput();
+            this.elements.fieldDefinition.html(this.vocab.getDefinition());
+            if (app.user.settings.get(&#x27;showHeisig&#x27;) &amp;&amp; this.vocab.has(&#x27;heisigDefinition&#x27;)) {
+                this.elements.fieldHeisig.text(&#x27;Keyword: &#x27; + this.vocab.get(&#x27;heisigDefinition&#x27;));
+            }
+            if (this.vocab.isJapanese() &amp;&amp; app.fn.hasKana(this.vocab.get(&#x27;writing&#x27;))) {
+                if (app.fn.isKana(this.vocab.get(&#x27;writing&#x27;))) {
+                    this.elements.fieldReading.empty();
+                } else {
+                    this.elements.fieldReading.html(this.vocab.getReading(null, {
+                        hide: app.user.settings.get(&#x27;hideReading&#x27;),
+                        hideKana: app.user.settings.get(&#x27;studyKana&#x27;) ? this.vocab.getKana() : [],
+                        style: app.user.settings.get(&#x27;readingStyle&#x27;)
+                    }));
+                }
+            } else {
+                this.elements.fieldReading.html(this.vocab.getReading(app.user.settings.get(&#x27;hideReading&#x27;) ? this.position : null, {
+                    hide: app.user.settings.get(&#x27;hideReading&#x27;),
+                    style: app.user.settings.get(&#x27;readingStyle&#x27;)
+                }));
+            }
+            this.elements.fieldWriting.html(this.vocab.getWriting(this.position, {classes: &#x27;highlight&#x27;}));
+            this.toggleToolbarEraser();
+            return this;
+        },
+        /**
+         * @method events
+         * @returns {Object}
+         */
+        events: _.extend({}, Prompt.prototype.events, {
+            &#x27;vclick #toolbar-eraser&#x27;: &#x27;handleToolbarEraserClicked&#x27;,
+            &#x27;vclick #toolbar-reveal&#x27;: &#x27;handleToolbarRevealClicked&#x27;,
+            &#x27;vclick #toolbar-teach&#x27;: &#x27;handleToolbarTeachClicked&#x27;
+        }),
+        /**
+         * @method handlePromptClicked
+         */
+        handleCanvasClicked: function() {
+            if (app.sidebars.isCollapsed() &amp;&amp; this.promptClick) {
+                if (this.review.getAt(&#x27;answered&#x27;)) {
+                    this.next();
+                } else if (!this.character.isComplete()) {
+                    this.taps++;
+                    this.canvas.fadeShape(&#x27;background&#x27;, this.character.getExpectedStroke().getShape(), {color: &#x27;#b3b3b3&#x27;, milliseconds: 1000});
+                }
+            }
+        },
+        /**
+         * @method handleInputDown
+         */
+        handleInputDown: function() {
+            app.timer.stopThinking();
+        },
+        /**
+         * @method handleInputUp
+         */
+        handleInputUp: function(points, shape) {
+            if (points &amp;&amp; points.length &gt; 1 &amp;&amp; shape) {
+                var stroke = this.character.recognizeStroke(points, shape);
+                if (stroke) {
+                    this.attempts = 0;
+                    this.toggleToolbarEraser();
+                    this.canvas.lastMouseDownEvent = null;
+                    if (app.user.settings.get(&#x27;squigs&#x27;)) {
+                        this.canvas.getLayer(&#x27;stroke&#x27;).alpha = 1;
+                        this.canvas.drawShape(&#x27;stroke&#x27;, shape);
+                    } else {
+                        this.canvas.tweenShape(&#x27;stroke&#x27;, stroke.getUserShape(), stroke.getShape());
+                    }
+                    if (this.character.isComplete()) {
+                        if (this.taps &gt; 2) {
+                            this.review.setAt(&#x27;score&#x27;, 1);
+                        } else if (this.taps &gt;= 1 &amp;&amp; this.character.getMax() &lt; 6) {
+                            this.review.setAt(&#x27;score&#x27;, 1);
+                        } else if (this.taps &gt; 1) {
+                            this.review.setAt(&#x27;score&#x27;, 2);
+                        }
+                        if (app.user.settings.get(&#x27;squigs&#x27;)) {
+                            this.canvas.tweenCharacter(&#x27;background&#x27;, this.review.getCharacter());
+                            if (app.user.settings.get(&#x27;gradingColor&#x27;)) {
+                                this.canvas.injectLayerColor(&#x27;stroke&#x27;, &#x27;#444444&#x27;);
+                            } else {
+                                this.canvas.injectLayerColor(&#x27;stroke&#x27;, &#x27;#888888&#x27;);
+                            }
+                            this.canvas.getLayer(&#x27;stroke&#x27;).alpha = 0.75;
+                            this.review.setSquig(this.canvas.getLayer(&#x27;stroke&#x27;).clone(true));
+                        } else {
+                            this.canvas.fadeLayer(&#x27;background&#x27;, null);
+                        }
+                        this.revealed = false;
+                        this.toggleToolbarReveal();
+                        this.renderAnswer();
+                    } else {
+                        if (this.teaching) {
+                            this.teach();
+                        } else {
+                            this.canvas.fadeLayer(&#x27;background&#x27;, null);
+                            this.revealed = false;
+                            this.toggleToolbarReveal();
+                        }
+                    }
+                } else {
+                    this.attempts++;
+                    if (this.attempts &gt; this.maxAttempts) {
+                        this.canvas.fadeShape(&#x27;background&#x27;, this.character.getExpectedStroke().getShape(), {color: &#x27;#b3b3b3&#x27;, milliseconds: 1000});
+                        this.review.setAt(&#x27;score&#x27;, 1);
+                    }
+                }
+            }
+        },
+        /**
+         * @method handleCanvasSwipeUp
+         */
+        handleCanvasSwipeUp: function() {
+            if (this.character.length) {
+                this.hideNavigation();
+                app.analytics.trackEvent(&#x27;Prompt&#x27;, &#x27;swipeup&#x27;, &#x27;eraser&#x27;);
+                this.renderQuestion();
+                this.character.reset();
+                this.canvas.clearAll();
+                this.revealed = false;
+                this.toggleToolbarReveal();
+            }
+            this.toggleToolbarEraser();
+        },
+        /**
+         * @method handleToolbarEraserClicked
+         * @param {Event} event
+         */
+        handleToolbarEraserClicked: function(event) {
+            event.preventDefault();
+            this.gradingButtons.hide();
+            app.analytics.trackEvent(&#x27;Prompt&#x27;, &#x27;click&#x27;, &#x27;eraser&#x27;);
+            this.review.setAt(&#x27;answered&#x27;, false);
+            this.teaching = false;
+            if (this.character.length) {
+                this.hideNavigation();
+                this.renderQuestion();
+                this.character.reset();
+                this.canvas.clearAll();
+                this.revealed = false;
+                this.teaching = false;
+                this.toggleToolbarReveal();
+            }
+            this.toggleToolbarEraser();
+        },
+        /**
+         * @method handleToolbarRevealClicked
+         * @param {Event} event
+         */
+        handleToolbarRevealClicked: function(event) {
+            event.preventDefault();
+            app.analytics.trackEvent(&#x27;Prompt&#x27;, &#x27;click&#x27;, &#x27;reveal&#x27;);
+            if (this.revealed) {
+                this.canvas.clearLayer(&#x27;background&#x27;);
+                this.revealed = false;
+            } else {
+                this.revealCharacter();
+                this.revealed = true;
+            }
+            this.toggleToolbarReveal();
+        },
+        /**
+         * @method handleToolbarTeachClicked
+         * @param {Event} event
+         */
+        handleToolbarTeachClicked: function(event) {
+            event.preventDefault();
+            app.analytics.trackEvent(&#x27;Prompt&#x27;, &#x27;click&#x27;, &#x27;teach&#x27;);
+            this.review.setAt(&#x27;score&#x27;, 1);
+            if (this.character.isComplete()) {
+                this.handleToolbarEraserClicked(event);
+                this.teach();
+            } else {
+                if (this.teaching) {
+                    this.canvas.fadeLayer(&#x27;background&#x27;, null);
+                    this.teaching = false;
+                } else {
+                    this.teach();
+                }
+            }
+        },
+        /**
+         * @method reset
+         * @returns {PromptRune}
+         */
+        reset: function() {
+            Prompt.prototype.reset.call(this);
+            this.canvas.clearAll();
+            return this;
+        },
+        /**
+         * @method resize
+         * @returns {PromptRune}v
+         */
+        resize: function() {
+            Prompt.prototype.resize.call(this);
+            var canvasSize = this.canvas.getWidth();
+            var contentHeight = app.router.currentPage.getContentHeight();
+            var contentWidth = app.router.currentPage.getContentWidth();
+            if (app.isPortrait()) {
+                this.$el.css({
+                    &#x27;border-bottom&#x27;: &#x27;1px solid #000000&#x27;,
+                    &#x27;border-right&#x27;: &#x27;none&#x27;,
+                    height: contentHeight - canvasSize - 1,
+                    &#x27;padding-top&#x27;: 0,
+                    width: canvasSize
+                });
+                this.elements.toolbar.css({
+                    &#x27;border-bottom&#x27;: &#x27;none&#x27;,
+                    &#x27;border-top&#x27;: &#x27;1px solid #000000&#x27;,
+                    bottom: 0,
+                    top: &#x27;auto&#x27;
+                });
+                this.elements.promptText.css(&#x27;max-height&#x27;, contentHeight - canvasSize - 36);
+            } else {
+                this.$el.css({
+                    &#x27;border-bottom&#x27;: &#x27;none&#x27;,
+                    &#x27;border-right&#x27;: &#x27;1px solid #000000&#x27;,
+                    height: canvasSize,
+                    &#x27;padding-top&#x27;: &#x27;36px&#x27;,
+                    width: contentWidth - canvasSize - 1
+                });
+                this.elements.toolbar.css({
+                    &#x27;border-bottom&#x27;: &#x27;1px solid #000000&#x27;,
+                    &#x27;border-top&#x27;: &#x27;none&#x27;,
+                    bottom: &#x27;auto&#x27;,
+                    top: 0
+                });
+                this.elements.promptText.css(&#x27;max-height&#x27;, contentHeight - 36);
+            }
+            this.canvas.clearAll();
+            if (app.user.settings.get(&#x27;gradingColor&#x27;) &amp;&amp; this.character.isComplete()) {
+                this.canvas.drawShape(&#x27;stroke&#x27;, this.character.getShape(), {
+                    color: app.user.settings.get(&#x27;gradingColors&#x27;)[this.review.getAt(&#x27;score&#x27;) - 1]
+                });
+                if (this.review.getSquig()) {
+                    this.canvas.getLayer(&#x27;stroke&#x27;).addChild(this.review.getSquig());
+                }
+            } else if (this.character.length) {
+                this.canvas.drawShape(&#x27;stroke&#x27;, this.character.getShape());
+            }
+            return this;
+        },
+        /**
+         * @method revealCharacter
+         * @param {Number} [excludeStroke]
+         */
+        revealCharacter: function(excludeStroke) {
+            this.canvas.clearLayer(&#x27;background&#x27;);
+            this.canvas.drawShape(&#x27;background&#x27;, this.character.getExpectedVariations()[0].getShape(excludeStroke), {color: &#x27;#b3b3b3&#x27;});
+            this.review.setAt(&#x27;score&#x27;, 1);
+        },
+        /**
+         * @method teach
+         * @returns {PromptRune}
+         */
+        teach: function() {
+            var stroke = this.character.getExpectedStroke();
+            if (stroke) {
+                var strokeParam = stroke.getTraceParam();
+                var strokePath = strokeParam.get(&#x27;corners&#x27;);
+                this.canvas.clearLayer(&#x27;background&#x27;);
+                this.canvas.drawShape(&#x27;background&#x27;, stroke.getShape(), {color: &#x27;#b3b3b3&#x27;});
+                this.canvas.tracePath(&#x27;background&#x27;, strokePath);
+                this.review.setAt(&#x27;score&#x27;, 1);
+                this.teaching = true;
+            }
+            return this;
+        },
+        /**
+         * @method toggleToolbarEraser
+         */
+        toggleToolbarEraser: function() {
+            if (this.character.length) {
+                this.elements.toolbarEraser.removeClass(&#x27;text-muted&#x27;);
+            } else {
+                this.elements.toolbarEraser.addClass(&#x27;text-muted&#x27;);
+            }
+        },
+        /**
+         * @method toggleToolbarReveal
+         */
+        toggleToolbarReveal: function() {
+            if (this.revealed) {
+                this.elements.toolbarReveal.addClass(&#x27;text-primary&#x27;);
+            } else {
+                this.elements.toolbarReveal.removeClass(&#x27;text-primary&#x27;);
+            }
+        }
+    });
+
+    return PromptRune;
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

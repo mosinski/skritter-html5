@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>www/application/Recognizer.js - skritter-html5</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="skritter-html5"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.2632</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Analytics.html">Analytics</a></li>
+            
+                <li><a href="../classes/Api.html">Api</a></li>
+            
+                <li><a href="../classes/Application.html">Application</a></li>
+            
+                <li><a href="../classes/Assets.html">Assets</a></li>
+            
+                <li><a href="../classes/BaseApplication.html">BaseApplication</a></li>
+            
+                <li><a href="../classes/BaseCollection.html">BaseCollection</a></li>
+            
+                <li><a href="../classes/BaseModel.html">BaseModel</a></li>
+            
+                <li><a href="../classes/BasePage.html">BasePage</a></li>
+            
+                <li><a href="../classes/BaseRouter.html">BaseRouter</a></li>
+            
+                <li><a href="../classes/BaseView.html">BaseView</a></li>
+            
+                <li><a href="../classes/Bootstrap.html">Bootstrap</a></li>
+            
+                <li><a href="../classes/CanvasCharacter.html">CanvasCharacter</a></li>
+            
+                <li><a href="../classes/CanvasStroke.html">CanvasStroke</a></li>
+            
+                <li><a href="../classes/CharacterEditor.html">CharacterEditor</a></li>
+            
+                <li><a href="../classes/DataDecomp.html">DataDecomp</a></li>
+            
+                <li><a href="../classes/DataDecomps.html">DataDecomps</a></li>
+            
+                <li><a href="../classes/DataItem.html">DataItem</a></li>
+            
+                <li><a href="../classes/DataItems.html">DataItems</a></li>
+            
+                <li><a href="../classes/DataParam.html">DataParam</a></li>
+            
+                <li><a href="../classes/DataParams.html">DataParams</a></li>
+            
+                <li><a href="../classes/DataReview.html">DataReview</a></li>
+            
+                <li><a href="../classes/DataReviews.html">DataReviews</a></li>
+            
+                <li><a href="../classes/DataSentence.html">DataSentence</a></li>
+            
+                <li><a href="../classes/DataSentences.html">DataSentences</a></li>
+            
+                <li><a href="../classes/DataSRSConfig.html">DataSRSConfig</a></li>
+            
+                <li><a href="../classes/DataSRSConfigs.html">DataSRSConfigs</a></li>
+            
+                <li><a href="../classes/DataStroke.html">DataStroke</a></li>
+            
+                <li><a href="../classes/DataStrokes.html">DataStrokes</a></li>
+            
+                <li><a href="../classes/DataVocab.html">DataVocab</a></li>
+            
+                <li><a href="../classes/DataVocabList.html">DataVocabList</a></li>
+            
+                <li><a href="../classes/DataVocabLists.html">DataVocabLists</a></li>
+            
+                <li><a href="../classes/DataVocabs.html">DataVocabs</a></li>
+            
+                <li><a href="../classes/Dialogs.html">Dialogs</a></li>
+            
+                <li><a href="../classes/IndexedDBAdapter.html">IndexedDBAdapter</a></li>
+            
+                <li><a href="../classes/Kana.html">Kana</a></li>
+            
+                <li><a href="../classes/ListRowTable.html">ListRowTable</a></li>
+            
+                <li><a href="../classes/ListSectionTable.html">ListSectionTable</a></li>
+            
+                <li><a href="../classes/ListTable.html">ListTable</a></li>
+            
+                <li><a href="../classes/Mapper.html">Mapper</a></li>
+            
+                <li><a href="../classes/PageAccount.html">PageAccount</a></li>
+            
+                <li><a href="../classes/PageCreateAccount.html">PageCreateAccount</a></li>
+            
+                <li><a href="../classes/PageDashboard.html">PageDashboard</a></li>
+            
+                <li><a href="../classes/PageExport.html">PageExport</a></li>
+            
+                <li><a href="../classes/PageFilters.html">PageFilters</a></li>
+            
+                <li><a href="../classes/PageLanding.html">PageLanding</a></li>
+            
+                <li><a href="../classes/PageLanguageSelect.html">PageLanguageSelect</a></li>
+            
+                <li><a href="../classes/PageLearningCenter.html">PageLearningCenter</a></li>
+            
+                <li><a href="../classes/PageList.html">PageList</a></li>
+            
+                <li><a href="../classes/PageLists.html">PageLists</a></li>
+            
+                <li><a href="../classes/PageListSection.html">PageListSection</a></li>
+            
+                <li><a href="../classes/PageListSelect.html">PageListSelect</a></li>
+            
+                <li><a href="../classes/PageLogin.html">PageLogin</a></li>
+            
+                <li><a href="../classes/PageScratchpad.html">PageScratchpad</a></li>
+            
+                <li><a href="../classes/PageSettings.html">PageSettings</a></li>
+            
+                <li><a href="../classes/PageStats.html">PageStats</a></li>
+            
+                <li><a href="../classes/PageStrokeOrder.html">PageStrokeOrder</a></li>
+            
+                <li><a href="../classes/PageStudy.html">PageStudy</a></li>
+            
+                <li><a href="../classes/PageTests.html">PageTests</a></li>
+            
+                <li><a href="../classes/PageWords.html">PageWords</a></li>
+            
+                <li><a href="../classes/ParamEditor.html">ParamEditor</a></li>
+            
+                <li><a href="../classes/Params.html">Params</a></li>
+            
+                <li><a href="../classes/PinyinConverter.html">PinyinConverter</a></li>
+            
+                <li><a href="../classes/Prompt.html">Prompt</a></li>
+            
+                <li><a href="../classes/PromptCanvas.html">PromptCanvas</a></li>
+            
+                <li><a href="../classes/PromptController.html">PromptController</a></li>
+            
+                <li><a href="../classes/PromptDefn.html">PromptDefn</a></li>
+            
+                <li><a href="../classes/PromptGradingButtons.html">PromptGradingButtons</a></li>
+            
+                <li><a href="../classes/PromptRdng.html">PromptRdng</a></li>
+            
+                <li><a href="../classes/PromptRune.html">PromptRune</a></li>
+            
+                <li><a href="../classes/PromptTone.html">PromptTone</a></li>
+            
+                <li><a href="../classes/Recognizer.html">Recognizer</a></li>
+            
+                <li><a href="../classes/Router.html">Router</a></li>
+            
+                <li><a href="../classes/RouterAccountCreation.html">RouterAccountCreation</a></li>
+            
+                <li><a href="../classes/RouterAdmin.html">RouterAdmin</a></li>
+            
+                <li><a href="../classes/RouterLearningCenter.html">RouterLearningCenter</a></li>
+            
+                <li><a href="../classes/ScheduleItem.html">ScheduleItem</a></li>
+            
+                <li><a href="../classes/ScheduleItems.html">ScheduleItems</a></li>
+            
+                <li><a href="../classes/Shortstraw.html">Shortstraw</a></li>
+            
+                <li><a href="../classes/Sidebars.html">Sidebars</a></li>
+            
+                <li><a href="../classes/Strokes.html">Strokes</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TimerStopwatch.html">TimerStopwatch</a></li>
+            
+                <li><a href="../classes/User.html">User</a></li>
+            
+                <li><a href="../classes/UserData.html">UserData</a></li>
+            
+                <li><a href="../classes/UserSettings.html">UserSettings</a></li>
+            
+                <li><a href="../classes/UserStats.html">UserStats</a></li>
+            
+                <li><a href="../classes/UserSubscription.html">UserSubscription</a></li>
+            
+                <li><a href="../classes/VocabTable.html">VocabTable</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/Application.html">Application</a></li>
+            
+                <li><a href="../modules/Components.html">Components</a></li>
+            
+                <li><a href="../modules/Framework.html">Framework</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: www/application/Recognizer.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Application
+ */
+define([], function() {
+    /**
+     * @class Recognizer
+     */
+    function Recognizer() {
+        this.baseAngleThreshold = 30;
+        this.baseCornerPenalty = 50;
+        this.baseCornerThreshold = 0;
+        this.baseDistanceThreshold = 150;
+        this.baseSize = 600;
+        this.canvasSize = 600;
+    }
+    /**
+     * @method recognize
+     * @param {CanvasCharacter} character
+     * @param {CanvasStroke} stroke
+     * @returns {Boolean|CanvasStroke}
+     */
+    Recognizer.prototype.recognize = function(character, stroke) {
+        var results = this.getResults(character, stroke);
+        results = _.filter(results, &#x27;total&#x27;);
+        results = _.sortBy(results, &#x27;total&#x27;);
+        if (results.length) {
+            return results[0];
+        }
+        return false;
+    };
+    /**
+     * @method getResults
+     * @param {CanvasCharacter} character
+     * @param {CanvasStroke} userStroke
+     * @returns {Array}
+     */
+    Recognizer.prototype.getResults = function(character, userStroke) {
+        var results = [];
+        var targets = character.getExpectedVariations();
+        for (var a = 0, lengthA = targets.length; a &lt; lengthA; a++) {
+            var target = targets[a];
+            for (var b = 0, lengthB = target.length; b &lt; lengthB; b++) {
+                var targetStroke = target.at(b);
+                if (targetStroke.get(&#x27;position&#x27;) === character.getPosition()) {
+                    results = results.concat(this.runChecks(targetStroke, userStroke));
+                }
+            }
+        }
+        return results;
+    };
+    /**
+     * @method scaleThreshold
+     * @param {Number} value
+     * @returns {Number}
+     */
+    Recognizer.prototype.scaleThreshold = function(value) {
+        return value * (this.canvasSize / this.baseSize);
+    };
+    /**
+     * @method runChecks
+     * @param {CanvasStroke} targetStroke
+     * @param {CanvasStroke} userStroke
+     ;;     * @returns {Array}
+     */
+    Recognizer.prototype.runChecks = function(targetStroke, userStroke) {
+        var results = [];
+        var params = targetStroke.getParams();
+        this.canvasSize = app.get(&#x27;canvasSize&#x27;);
+        for (var a = 0, lengthA = params.length; a &lt; lengthA; a++) {
+            var param = params[a];
+            var result = userStroke.clone();
+            var skipChecks = param.has(&#x27;skipChecks&#x27;) ? param.get(&#x27;skipChecks&#x27;) : [];
+            var total = 0;
+            //skip neutral tone during process
+            if (param.get(&#x27;strokeId&#x27;) === 387) {
+                continue;
+            }
+            var scores = {
+                angle: skipChecks.indexOf(&#x27;angle&#x27;) === -1 ? this.checkAngle(param, userStroke) : 0,
+                corners: skipChecks.indexOf(&#x27;corners&#x27;) === -1 ? this.checkCorners(param, userStroke) : 0,
+                distance: skipChecks.indexOf(&#x27;distance&#x27;) === -1 ? this.checkDistance(param, userStroke) : 0
+            };
+            for (var check in scores) {
+                var score = scores[check];
+                if (score &gt; -1) {
+                    total += score;
+                } else {
+                    total = false;
+                    break;
+                }
+            }
+            result.set({
+                contains: targetStroke.get(&#x27;contains&#x27;),
+                data: targetStroke.get(&#x27;data&#x27;),
+                id: targetStroke.id,
+                kana: targetStroke.get(&#x27;kana&#x27;),
+                position: targetStroke.get(&#x27;position&#x27;),
+                shape: targetStroke.get(&#x27;shape&#x27;),
+                strokeId: targetStroke.get(&#x27;strokeId&#x27;),
+                tone: targetStroke.get(&#x27;tone&#x27;)
+            });
+            result.scores = scores;
+            result.total = total;
+            results.push(result);
+        }
+        return results;
+    };
+    /**
+     * @method checkAngle
+     * @param {DataParam} targetParam
+     * @param {CanvasStroke} userStroke
+     * @returns {Number}
+     */
+    Recognizer.prototype.checkAngle = function(targetParam, userStroke) {
+        var angleThreshold = targetParam.has(&#x27;angleThreshold&#x27;) ? targetParam.get(&#x27;angleThreshold&#x27;) : this.baseAngleThreshold;
+        var score = Math.abs(targetParam.getFirstAngle() - userStroke.getFirstAngle());
+        if (score &lt;= angleThreshold) {
+            return score;
+        }
+        return -1;
+    };
+    /**
+     * @method checkCorners
+     * @param {DataParam} targetParam
+     * @param {CanvasStroke} userStroke
+     * @returns {Number}
+     */
+    Recognizer.prototype.checkCorners = function(targetParam, userStroke) {
+        var cornerThreshold = targetParam.has(&#x27;cornerThreshold&#x27;) ? targetParam.get(&#x27;cornerThreshold&#x27;) : this.baseCornerThreshold;
+        var score = Math.abs(targetParam.get(&#x27;corners&#x27;).length - userStroke.get(&#x27;corners&#x27;).length);
+        if (score &lt;= cornerThreshold) {
+            return score * this.baseCornerPenalty;
+        }
+        return -1;
+    };
+    /**
+     * @method checkDistance
+     * @param {DataParam} targetParam
+     * @param {CanvasStroke} userStroke
+     * @returns {Number}
+     */
+    Recognizer.prototype.checkDistance = function(targetParam, userStroke) {
+        var score = app.fn.getDistance(targetParam.getRectangle().center, userStroke.getRectangle().center);
+        if (score &lt;= this.scaleThreshold(this.baseDistanceThreshold)) {
+            return score;
+        }
+        return -1;
+    };
+
+    return Recognizer;
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

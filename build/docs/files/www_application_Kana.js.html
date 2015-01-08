@@ -1,0 +1,2526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>www/application/Kana.js - skritter-html5</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title="skritter-html5"></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.2632</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Analytics.html">Analytics</a></li>
+            
+                <li><a href="../classes/Api.html">Api</a></li>
+            
+                <li><a href="../classes/Application.html">Application</a></li>
+            
+                <li><a href="../classes/Assets.html">Assets</a></li>
+            
+                <li><a href="../classes/BaseApplication.html">BaseApplication</a></li>
+            
+                <li><a href="../classes/BaseCollection.html">BaseCollection</a></li>
+            
+                <li><a href="../classes/BaseModel.html">BaseModel</a></li>
+            
+                <li><a href="../classes/BasePage.html">BasePage</a></li>
+            
+                <li><a href="../classes/BaseRouter.html">BaseRouter</a></li>
+            
+                <li><a href="../classes/BaseView.html">BaseView</a></li>
+            
+                <li><a href="../classes/Bootstrap.html">Bootstrap</a></li>
+            
+                <li><a href="../classes/CanvasCharacter.html">CanvasCharacter</a></li>
+            
+                <li><a href="../classes/CanvasStroke.html">CanvasStroke</a></li>
+            
+                <li><a href="../classes/CharacterEditor.html">CharacterEditor</a></li>
+            
+                <li><a href="../classes/DataDecomp.html">DataDecomp</a></li>
+            
+                <li><a href="../classes/DataDecomps.html">DataDecomps</a></li>
+            
+                <li><a href="../classes/DataItem.html">DataItem</a></li>
+            
+                <li><a href="../classes/DataItems.html">DataItems</a></li>
+            
+                <li><a href="../classes/DataParam.html">DataParam</a></li>
+            
+                <li><a href="../classes/DataParams.html">DataParams</a></li>
+            
+                <li><a href="../classes/DataReview.html">DataReview</a></li>
+            
+                <li><a href="../classes/DataReviews.html">DataReviews</a></li>
+            
+                <li><a href="../classes/DataSentence.html">DataSentence</a></li>
+            
+                <li><a href="../classes/DataSentences.html">DataSentences</a></li>
+            
+                <li><a href="../classes/DataSRSConfig.html">DataSRSConfig</a></li>
+            
+                <li><a href="../classes/DataSRSConfigs.html">DataSRSConfigs</a></li>
+            
+                <li><a href="../classes/DataStroke.html">DataStroke</a></li>
+            
+                <li><a href="../classes/DataStrokes.html">DataStrokes</a></li>
+            
+                <li><a href="../classes/DataVocab.html">DataVocab</a></li>
+            
+                <li><a href="../classes/DataVocabList.html">DataVocabList</a></li>
+            
+                <li><a href="../classes/DataVocabLists.html">DataVocabLists</a></li>
+            
+                <li><a href="../classes/DataVocabs.html">DataVocabs</a></li>
+            
+                <li><a href="../classes/Dialogs.html">Dialogs</a></li>
+            
+                <li><a href="../classes/IndexedDBAdapter.html">IndexedDBAdapter</a></li>
+            
+                <li><a href="../classes/Kana.html">Kana</a></li>
+            
+                <li><a href="../classes/ListRowTable.html">ListRowTable</a></li>
+            
+                <li><a href="../classes/ListSectionTable.html">ListSectionTable</a></li>
+            
+                <li><a href="../classes/ListTable.html">ListTable</a></li>
+            
+                <li><a href="../classes/Mapper.html">Mapper</a></li>
+            
+                <li><a href="../classes/PageAccount.html">PageAccount</a></li>
+            
+                <li><a href="../classes/PageCreateAccount.html">PageCreateAccount</a></li>
+            
+                <li><a href="../classes/PageDashboard.html">PageDashboard</a></li>
+            
+                <li><a href="../classes/PageExport.html">PageExport</a></li>
+            
+                <li><a href="../classes/PageFilters.html">PageFilters</a></li>
+            
+                <li><a href="../classes/PageLanding.html">PageLanding</a></li>
+            
+                <li><a href="../classes/PageLanguageSelect.html">PageLanguageSelect</a></li>
+            
+                <li><a href="../classes/PageLearningCenter.html">PageLearningCenter</a></li>
+            
+                <li><a href="../classes/PageList.html">PageList</a></li>
+            
+                <li><a href="../classes/PageLists.html">PageLists</a></li>
+            
+                <li><a href="../classes/PageListSection.html">PageListSection</a></li>
+            
+                <li><a href="../classes/PageListSelect.html">PageListSelect</a></li>
+            
+                <li><a href="../classes/PageLogin.html">PageLogin</a></li>
+            
+                <li><a href="../classes/PageScratchpad.html">PageScratchpad</a></li>
+            
+                <li><a href="../classes/PageSettings.html">PageSettings</a></li>
+            
+                <li><a href="../classes/PageStats.html">PageStats</a></li>
+            
+                <li><a href="../classes/PageStrokeOrder.html">PageStrokeOrder</a></li>
+            
+                <li><a href="../classes/PageStudy.html">PageStudy</a></li>
+            
+                <li><a href="../classes/PageTests.html">PageTests</a></li>
+            
+                <li><a href="../classes/PageWords.html">PageWords</a></li>
+            
+                <li><a href="../classes/ParamEditor.html">ParamEditor</a></li>
+            
+                <li><a href="../classes/Params.html">Params</a></li>
+            
+                <li><a href="../classes/PinyinConverter.html">PinyinConverter</a></li>
+            
+                <li><a href="../classes/Prompt.html">Prompt</a></li>
+            
+                <li><a href="../classes/PromptCanvas.html">PromptCanvas</a></li>
+            
+                <li><a href="../classes/PromptController.html">PromptController</a></li>
+            
+                <li><a href="../classes/PromptDefn.html">PromptDefn</a></li>
+            
+                <li><a href="../classes/PromptGradingButtons.html">PromptGradingButtons</a></li>
+            
+                <li><a href="../classes/PromptRdng.html">PromptRdng</a></li>
+            
+                <li><a href="../classes/PromptRune.html">PromptRune</a></li>
+            
+                <li><a href="../classes/PromptTone.html">PromptTone</a></li>
+            
+                <li><a href="../classes/Recognizer.html">Recognizer</a></li>
+            
+                <li><a href="../classes/Router.html">Router</a></li>
+            
+                <li><a href="../classes/RouterAccountCreation.html">RouterAccountCreation</a></li>
+            
+                <li><a href="../classes/RouterAdmin.html">RouterAdmin</a></li>
+            
+                <li><a href="../classes/RouterLearningCenter.html">RouterLearningCenter</a></li>
+            
+                <li><a href="../classes/ScheduleItem.html">ScheduleItem</a></li>
+            
+                <li><a href="../classes/ScheduleItems.html">ScheduleItems</a></li>
+            
+                <li><a href="../classes/Shortstraw.html">Shortstraw</a></li>
+            
+                <li><a href="../classes/Sidebars.html">Sidebars</a></li>
+            
+                <li><a href="../classes/Strokes.html">Strokes</a></li>
+            
+                <li><a href="../classes/Timer.html">Timer</a></li>
+            
+                <li><a href="../classes/TimerStopwatch.html">TimerStopwatch</a></li>
+            
+                <li><a href="../classes/User.html">User</a></li>
+            
+                <li><a href="../classes/UserData.html">UserData</a></li>
+            
+                <li><a href="../classes/UserSettings.html">UserSettings</a></li>
+            
+                <li><a href="../classes/UserStats.html">UserStats</a></li>
+            
+                <li><a href="../classes/UserSubscription.html">UserSubscription</a></li>
+            
+                <li><a href="../classes/VocabTable.html">VocabTable</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/Application.html">Application</a></li>
+            
+                <li><a href="../modules/Components.html">Components</a></li>
+            
+                <li><a href="../modules/Framework.html">Framework</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: www/application/Kana.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * @module Application
+ * @class Kana
+ */
+define([], function () {
+    /**
+     * @property {Array} data
+     */
+    var data = [
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;あ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [600, 0.23, 0.318, 1, 1, 0],
+                    [601, 0.41, 0.11, 1, 1, 0],
+                    [602, 0.17, 0.436, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぁ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [600, 0.364, 0.388, 0.5, 0.5, 0],
+                    [601, 0.444, 0.304, 0.5, 0.5, 0],
+                    [602, 0.336, 0.466, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;い&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [603, 0.144, 0.238, 1, 1, 0],
+                    [604, 0.672, 0.254, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぃ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [603, 0.314, 0.374, 0.5, 0.5, 0],
+                    [604, 0.586, 0.378, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;う&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [605, 0.408, 0.092, 1, 1, 0],
+                    [606, 0.28, 0.394, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゔ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [605, 0.408, 0.092, 1, 1, 0],
+                    [606, 0.28, 0.394, 1, 1, 0],
+                    [706, 0.712, 0.264, 1, 1, 0],
+                    [706, 0.756, 0.242, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぅ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [605, 0.474, 0.298, 0.5, 0.5, 0],
+                    [606, 0.408, 0.422, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;え&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [607, 0.408, 0.154, 1, 1, 0],
+                    [608, 0.228, 0.35, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぇ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [607, 0.444, 0.324, 0.5, 0.5, 0],
+                    [608, 0.356, 0.426, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;お&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [609, 0.158, 0.302, 1, 1, 0],
+                    [610, 0.168, 0.13, 1, 1, 0],
+                    [611, 0.682, 0.208, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぉ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [609, 0.328, 0.402, 0.5, 0.5, 0],
+                    [610, 0.334, 0.314, 0.5, 0.5, 0],
+                    [611, 0.592, 0.352, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;か&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [612, 0.138, 0.428, 1, 1, 0],
+                    [613, 0.162, 0.162, 1, 1, 0],
+                    [614, 0.64, 0.286, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゕ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [612, 0.312, 0.438, 0.5, 0.5, 0],
+                    [613, 0.328, 0.322, 0.5, 0.5, 0],
+                    [614, 0.56, 0.392, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;が&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [612, 0.138, 0.428, 1, 1, 0],
+                    [613, 0.162, 0.162, 1, 1, 0],
+                    [614, 0.58, 0.286, 1, 1, 0],
+                    [706, 0.7, 0.194, 1, 1, 0],
+                    [706, 0.746, 0.15, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;き&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [615, 0.254, 0.24, 1, 1, 0],
+                    [616, 0.366, 0.422, 1, 1, 0],
+                    [617, 0.417, 0.12, 1, 1, 0],
+                    [618, 0.33, 0.723, 1, 1, 0]
+                ],
+                [
+                    [615, 0.254, 0.24, 1, 1, 0],
+                    [616, 0.366, 0.422, 1, 1, 0],
+                    [830, 0.284, 0.122, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぎ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [615, 0.254, 0.24, 1, 1, 0],
+                    [616, 0.366, 0.422, 1, 1, 0],
+                    [617, 0.417, 0.12, 1, 1, 0],
+                    [618, 0.33, 0.723, 1, 1, 0],
+                    [706, 0.77, 0.24, 1, 1, 0],
+                    [706, 0.806, 0.192, 1, 1, 0]
+                ],
+                [
+                    [615, 0.254, 0.24, 1, 1, 0],
+                    [616, 0.366, 0.422, 1, 1, 0],
+                    [830, 0.284, 0.122, 1, 1, 0],
+                    [706, 0.77, 0.24, 1, 1, 0],
+                    [706, 0.806, 0.192, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;く&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [619, 0.392, 0.112, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぐ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [619, 0.392, 0.112, 1, 1, 0],
+                    [706, 0.7, 0.26, 1, 1, 0],
+                    [706, 0.75, 0.212, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;け&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [620, 0.184, 0.146, 1, 1, 0],
+                    [621, 0.404, 0.306, 1, 1, 0],
+                    [622, 0.548, 0.12, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゖ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [620, 0.334, 0.32, 0.5, 0.5, 0],
+                    [621, 0.446, 0.404, 0.5, 0.5, 0],
+                    [622, 0.518, 0.304, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;げ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [620, 0.184, 0.146, 1, 1, 0],
+                    [621, 0.404, 0.306, 1, 1, 0],
+                    [622, 0.548, 0.12, 1, 1, 0],
+                    [706, 0.752, 0.15, 1, 1, 0],
+                    [706, 0.796, 0.1, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;こ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [623, 0.288, 0.196, 1, 1, 0],
+                    [624, 0.248, 0.616, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ご&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [623, 0.288, 0.196, 1, 1, 0],
+                    [624, 0.248, 0.616, 1, 1, 0],
+                    [706, 0.742, 0.188, 1, 1, 0],
+                    [706, 0.8, 0.148, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;さ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [625, 0.26, 0.27, 1, 1, 0],
+                    [831, 0.26, 0.123, 1, 1, 0]
+                ],
+
+                [
+                    [625, 0.258, 0.272, 1, 1, 0],
+                    [626, 0.366, 0.122, 1, 1, 0],
+                    [627, 0.288, 0.684, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ざ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [625, 0.26, 0.27, 1, 1, 0],
+                    [831, 0.26, 0.123, 1, 1, 0],
+                    [706, 0.74, 0.176, 1, 1, 0],
+                    [706, 0.77, 0.122, 1, 1, 0]
+                ],
+
+                [
+                    [625, 0.258, 0.272, 1, 1, 0],
+                    [626, 0.366, 0.122, 1, 1, 0],
+                    [627, 0.288, 0.684, 1, 1, 0],
+                    [706, 0.74, 0.176, 1, 1, 0],
+                    [706, 0.77, 0.122, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;し&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [628, 0.296, 0.124, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;じ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [628, 0.296, 0.124, 1, 1, 0],
+                    [706, 0.588, 0.238, 1, 1, 0],
+                    [706, 0.636, 0.19, 1, 1, 0]
+
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;す&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [629, 0.13, 0.242, 1, 1, 0],
+                    [630, 0.318, 0.09, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ず&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [629, 0.13, 0.242, 1, 1, 0],
+                    [630, 0.318, 0.09, 1, 1, 0],
+                    [706, 0.724, 0.102, 1, 1, 0],
+                    [706, 0.778, 0.07, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;せ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [631, 0.1, 0.39, 1, 1, 0],
+                    [632, 0.524, 0.162, 1, 1, 0],
+                    [633, 0.312, 0.236, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぜ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [631, 0.1, 0.39, 1, 1, 0],
+                    [632, 0.524, 0.162, 1, 1, 0],
+                    [633, 0.312, 0.236, 1, 1, 0],
+                    [706, 0.776, 0.18, 1, 1, 0],
+                    [706, 0.824, 0.138, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;そ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [832, 0.268, 0.206, 1, 1, 0]
+                ],
+                [
+                    [634, 0.298, 0.25, 1, 1, 0],
+                    [635, 0.268, 0.206, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぞ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [634, 0.298, 0.25, 1, 1, 0],
+                    [635, 0.268, 0.206, 1, 1, 0],
+                    [706, 0.672, 0.242, 1, 1, 0],
+                    [706, 0.7, 0.208, 1, 1, 0]
+                ],
+                [
+                    [832, 0.268, 0.206, 1, 1, 0],
+                    [706, 0.672, 0.242, 1, 1, 0],
+                    [706, 0.7, 0.208, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;た&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [636, 0.198, 0.247, 1, 1, 0],
+                    [637, 0.198, 0.118, 1, 1, 0],
+                    [638, 0.506, 0.478, 1, 1, 0],
+                    [639, 0.494, 0.738, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;だ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [636, 0.198, 0.247, 1, 1, 0],
+                    [637, 0.198, 0.118, 1, 1, 0],
+                    [638, 0.506, 0.478, 1, 1, 0],
+                    [639, 0.494, 0.738, 1, 1, 0],
+                    [706, 0.722, 0.27, 1, 1, 0],
+                    [706, 0.754, 0.228, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ち&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [640, 0.204, 0.256, 1, 1, 0],
+                    [641, 0.292, 0.072, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぢ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [640, 0.204, 0.256, 1, 1, 0],
+                    [641, 0.292, 0.072, 1, 1, 0],
+                    [706, 0.686, 0.194, 1, 1, 0],
+                    [706, 0.722, 0.16, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;つ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [642, 0.132, 0.28, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;っ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [642, 0.282, 0.39, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;づ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [642, 0.076, 0.276, 1, 1, 0],
+                    [706, 0.826, 0.208, 1, 1, 0],
+                    [706, 0.854, 0.168, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;て&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [643, 0.134, 0.142, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;で&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [643, 0.134, 0.142, 1, 1, 0],
+                    [706, 0.794, 0.212, 1, 1, 0],
+                    [706, 0.832, 0.18, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;と&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [644, 0.24, 0.172, 1, 1, 0],
+                    [645, 0.252, 0.27, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ど&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [644, 0.24, 0.172, 1, 1, 0],
+                    [645, 0.252, 0.27, 1, 1, 0],
+                    [706, 0.722, 0.2, 1, 1, 0],
+                    [706, 0.767, 0.18, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;な&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [646, 0.158, 0.24, 1, 1, 0],
+                    [647, 0.24, 0.12, 1, 1, 0],
+                    [648, 0.73, 0.312, 1, 1, 0],
+                    [649, 0.338, 0.444, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;に&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [650, 0.178, 0.17, 1, 1, 0],
+                    [651, 0.496, 0.23, 1, 1, 0],
+                    [652, 0.476, 0.636, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぬ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [653, 0.224, 0.224, 1, 1, 0],
+                    [654, 0.12, 0.152, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ね&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [655, 0.282, 0.14, 1, 1, 0],
+                    [656, 0.134, 0.282, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;の&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [657, 0.148, 0.208, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;は&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [658, 0.156, 0.156, 1, 1, 0],
+                    [659, 0.436, 0.3, 1, 1, 0],
+                    [660, 0.38, 0.15, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ば&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [658, 0.156, 0.156, 1, 1, 0],
+                    [659, 0.436, 0.3, 1, 1, 0],
+                    [660, 0.38, 0.15, 1, 1, 0],
+                    [706, 0.754, 0.194, 1, 1, 0],
+                    [706, 0.794, 0.172, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぱ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [658, 0.156, 0.156, 1, 1, 0],
+                    [659, 0.436, 0.3, 1, 1, 0],
+                    [660, 0.38, 0.15, 1, 1, 0],
+                    [707, 0.786, 0.164, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ひ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [661, 0.144, 0.182, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;び&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [661, 0.144, 0.182, 1, 1, 0],
+                    [706, 0.708, 0.164, 1, 1, 0],
+                    [706, 0.748, 0.14, 1, 1, 0]
+
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぴ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [661, 0.144, 0.182, 1, 1, 0],
+                    [707, 0.714, 0.154, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ふ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [662, 0.442, 0.168, 1, 1, 0],
+                    [663, 0.35, 0.46, 1, 1, 0],
+                    [834, 0.138, 0.548, 1, 1, 0]
+                ],
+
+                [
+                    [662, 0.442, 0.168, 1, 1, 0],
+                    [663, 0.35, 0.46, 1, 1, 0],
+                    [664, 0.138, 0.654, 1, 1, 0],
+                    [665, 0.724, 0.548, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぶ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [662, 0.442, 0.168, 1, 1, 0],
+                    [663, 0.35, 0.46, 1, 1, 0],
+                    [834, 0.138, 0.548, 1, 1, 0],
+					[706, 0.736, 0.29, 1, 1, 0],
+                    [706, 0.768, 0.258, 1, 1, 0]
+                ],
+
+                [
+                    [662, 0.442, 0.168, 1, 1, 0],
+                    [663, 0.35, 0.46, 1, 1, 0],
+                    [664, 0.138, 0.654, 1, 1, 0],
+                    [665, 0.724, 0.548, 1, 1, 0],
+					[706, 0.736, 0.29, 1, 1, 0],
+                    [706, 0.768, 0.258, 1, 1, 0]
+                ] 
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぷ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [662, 0.442, 0.168, 1, 1, 0],
+                    [663, 0.35, 0.46, 1, 1, 0],
+                    [834, 0.138, 0.548, 1, 1, 0],
+					[707, 0.706, 0.198, 1, 1, 0]
+                ],
+
+                [
+                    [662, 0.442, 0.168, 1, 1, 0],
+                    [663, 0.35, 0.46, 1, 1, 0],
+                    [664, 0.138, 0.654, 1, 1, 0],
+                    [665, 0.724, 0.548, 1, 1, 0],
+					[707, 0.706, 0.198, 1, 1, 0]
+                ] 
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;へ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [774, 0.07, 0.312, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;べ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [666, 0.104, 0.314, 1, 1, 0],
+                    [706, 0.686, 0.29, 1, 1, 0],
+                    [706, 0.73, 0.272, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぺ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [666, 0.104, 0.314, 1, 1, 0],
+                    [707, 0.706, 0.288, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ほ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [667, 0.156, 0.146, 1, 1, 0],
+                    [668, 0.482, 0.176, 1, 1, 0],
+                    [669, 0.438, 0.356, 1, 1, 0],
+                    [670, 0.434, 0.23, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぼ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [667, 0.156, 0.146, 1, 1, 0],
+                    [668, 0.482, 0.176, 1, 1, 0],
+                    [669, 0.438, 0.356, 1, 1, 0],
+                    [670, 0.434, 0.23, 1, 1, 0],
+                    [706, 0.804, 0.152, 1, 1, 0],
+                    [706, 0.85, 0.13, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ぽ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [667, 0.156, 0.146, 1, 1, 0],
+                    [668, 0.482, 0.176, 1, 1, 0],
+                    [669, 0.438, 0.356, 1, 1, 0],
+                    [670, 0.434, 0.23, 1, 1, 0],
+                    [707, 0.824, 0.138, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ま&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [671, 0.198, 0.224, 1, 1, 0],
+                    [672, 0.284, 0.434, 1, 1, 0],
+                    [673, 0.278, 0.098, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;み&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [674, 0.12, 0.164, 1, 1, 0],
+                    [675, 0.526, 0.472, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;む&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [676, 0.16, 0.272, 1, 1, 0],
+                    [677, 0.17, 0.122, 1, 1, 0],
+                    [678, 0.694, 0.186, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;め&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [679, 0.224, 0.246, 1, 1, 0],
+                    [680, 0.148, 0.16, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;も&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [681, 0.258, 0.264, 1, 1, 0],
+                    [682, 0.274, 0.498, 1, 1, 0],
+                    [683, 0.382, 0.1, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;や&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [684, 0.104, 0.3, 1, 1, 0],
+                    [685, 0.494, 0.13, 1, 1, 0],
+                    [686, 0.268, 0.21, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゃ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [684, 0.302, 0.4, 0.5, 0.5, 0],
+                    [685, 0.494, 0.316, 0.5, 0.5, 0],
+                    [686, 0.384, 0.356, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゆ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [687, 0.166, 0.228, 1, 1, 0],
+                    [688, 0.416, 0.112, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゅ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [687, 0.332, 0.366, 0.5, 0.5, 0],
+                    [688, 0.456, 0.312, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;よ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [689, 0.528, 0.38, 1, 1, 0],
+                    [690, 0.23, 0.126, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ょ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [689, 0.516, 0.43, 0.5, 0.5, 0],
+                    [690, 0.372, 0.314, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ら&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [691, 0.382, 0.086, 1, 1, 0],
+                    [692, 0.238, 0.312, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;り&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [693, 0.32, 0.104, 1, 1, 0],
+                    [694, 0.482, 0.208, 1, 1, 0]
+                ],
+
+                [
+                    [833, 0.32, 0.104, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;る&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [695, 0.228, 0.156, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;れ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [696, 0.288, 0.126, 1, 1, 0],
+                    [697, 0.132, 0.292, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ろ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [698, 0.208, 0.146, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;わ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [699, 0.288, 0.128, 1, 1, 0],
+                    [700, 0.146, 0.314, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゎ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [699, 0.394, 0.314, 0.5, 0.5, 0],
+                    [700, 0.322, 0.41, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゐ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [701, 0.164, 0.176, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゑ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [702, 0.146, 0.134, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;を&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [703, 0.234, 0.228, 1, 1, 0],
+                    [704, 0.256, 0.1, 1, 1, 0],
+                    [705, 0.306, 0.412, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ん&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [708, 0.168, 0.136, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ア&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [709, 0.156, 0.128, 1, 1, 0],
+                    [710, 0.242, 0.298, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ァ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [709, 0.326, 0.314, 0.5, 0.5, 0],
+                    [710, 0.372, 0.4, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;イ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [711, 0.182, 0.094, 1, 1, 0],
+                    [712, 0.592, 0.366, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ィ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [711, 0.34, 0.298, 0.5, 0.5, 0],
+                    [712, 0.546, 0.434, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ウ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [713, 0.438, 0.092, 1, 1, 0],
+                    [714, 0.208, 0.254, 1, 1, 0],
+                    [715, 0.292, 0.238, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヴ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [713, 0.438, 0.092, 1, 1, 0],
+                    [714, 0.208, 0.254, 1, 1, 0],
+                    [715, 0.292, 0.238, 1, 1, 0],
+                    [706, 0.786, 0.146, 1, 1, 0],
+                    [706, 0.824, 0.124, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゥ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [713, 0.47, 0.297, 0.5, 0.5, 0],
+                    [714, 0.356, 0.378, 0.5, 0.5, 0],
+                    [715, 0.384, 0.368, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;エ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [716, 0.204, 0.246, 1, 1, 0],
+                    [717, 0.468, 0.29, 1, 1, 0],
+                    [718, 0.126, 0.578, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ェ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [716, 0.352, 0.372, 0.5, 0.5, 0],
+                    [717, 0.49, 0.396, 0.5, 0.5, 0],
+                    [718, 0.314, 0.54, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;オ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [719, 0.146, 0.286, 1, 1, 0],
+                    [720, 0.39, 0.096, 1, 1, 0],
+                    [721, 0.098, 0.322, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ォ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [719, 0.322, 0.394, 0.5, 0.5, 0],
+                    [720, 0.444, 0.294, 0.5, 0.5, 0],
+                    [721, 0.3, 0.418, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;カ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [722, 0.166, 0.258, 1, 1, 0],
+                    [723, 0.104, 0.104, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヵ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [722, 0.332, 0.378, 0.5, 0.5, 0],
+                    [723, 0.304, 0.304, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ガ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [722, 0.166, 0.258, 1, 1, 0],
+                    [723, 0.104, 0.104, 1, 1, 0],
+                    [706, 0.794, 0.166, 1, 1, 0],
+                    [706, 0.834, 0.146, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;キ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [724, 0.142, 0.23, 1, 1, 0],
+                    [725, 0.144, 0.408, 1, 1, 0],
+                    [726, 0.324, 0.104, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ギ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [724, 0.142, 0.23, 1, 1, 0],
+                    [725, 0.144, 0.408, 1, 1, 0],
+                    [726, 0.324, 0.104, 1, 1, 0],
+                    [706, 0.728, 0.14, 1, 1, 0],
+                    [706, 0.76, 0.116, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ク&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [727, 0.162, 0.116, 1, 1, 0],
+                    [728, 0.178, 0.22, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;グ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [727, 0.162, 0.116, 1, 1, 0],
+                    [728, 0.178, 0.22, 1, 1, 0],
+                    [706, 0.776, 0.152, 1, 1, 0],
+                    [706, 0.806, 0.122, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ケ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [729, 0.118, 0.094, 1, 1, 0],
+                    [730, 0.358, 0.276, 1, 1, 0],
+                    [731, 0.258, 0.33, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヶ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [729, 0.312, 0.302, 0.5, 0.5, 0],
+                    [730, 0.428, 0.386, 0.5, 0.5, 0],
+                    [731, 0.38, 0.418, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゲ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [729, 0.118, 0.094, 1, 1, 0],
+                    [730, 0.358, 0.276, 1, 1, 0],
+                    [731, 0.258, 0.33, 1, 1, 0],
+                    [706, 0.816, 0.182, 1, 1, 0],
+                    [706, 0.852, 0.16, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;コ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [732, 0.212, 0.28, 1, 1, 0],
+                    [733, 0.196, 0.598, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゴ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [732, 0.212, 0.28, 1, 1, 0],
+                    [733, 0.196, 0.598, 1, 1, 0],
+                    [706, 0.792, 0.208, 1, 1, 0],
+                    [706, 0.826, 0.188, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;サ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [734, 0.098, 0.326, 1, 1, 0],
+                    [735, 0.288, 0.152, 1, 1, 0],
+                    [736, 0.33, 0.08, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ザ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [734, 0.098, 0.326, 1, 1, 0],
+                    [735, 0.288, 0.152, 1, 1, 0],
+                    [736, 0.33, 0.08, 1, 1, 0],
+                    [706, 0.778, 0.132, 1, 1, 0],
+                    [706, 0.812, 0.1, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;シ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [737, 0.256, 0.172, 1, 1, 0],
+                    [737, 0.14, 0.368, 1, 1, 0],
+                    [738, 0.238, 0.288, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ジ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [737, 0.256, 0.172, 1, 1, 0],
+                    [737, 0.14, 0.368, 1, 1, 0],
+                    [738, 0.238, 0.288, 1, 1, 0],
+                    [706, 0.826, 0.195, 1, 1, 0],
+                    [706, 0.86, 0.168, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ス&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [739, 0.114, 0.212, 1, 1, 0],
+                    [740, 0.556, 0.486, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ズ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [739, 0.114, 0.212, 1, 1, 0],
+                    [740, 0.556, 0.486, 1, 1, 0],
+                    [706, 0.772, 0.18, 1, 1, 0],
+                    [706, 0.8, 0.142, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;セ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [741, 0.08, 0.27, 1, 1, 0],
+                    [742, 0.306, 0.124, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゼ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [741, 0.08, 0.27, 1, 1, 0],
+                    [742, 0.306, 0.124, 1, 1, 0],
+                    [706, 0.806, 0.19, 1, 1, 0],
+                    [706, 0.836, 0.166, 1, 1, 0]
+
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ソ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [743, 0.242, 0.204, 1, 1, 0],
+                    [744, 0.21, 0.146, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ゾ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [743, 0.242, 0.204, 1, 1, 0],
+                    [744, 0.21, 0.146, 1, 1, 0],
+                    [706, 0.832, 0.126, 1, 1, 0],
+                    [706, 0.864, 0.1, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;タ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [745, 0.214, 0.098, 1, 1, 0],
+                    [746, 0.248, 0.184, 1, 1, 0],
+                    [747, 0.398, 0.398, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ダ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [745, 0.214, 0.098, 1, 1, 0],
+                    [746, 0.248, 0.184, 1, 1, 0],
+                    [747, 0.398, 0.398, 1, 1, 0],
+                    [706, 0.846, 0.12, 1, 1, 0],
+                    [706, 0.886, 0.102, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;チ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [748, 0.144, 0.094, 1, 1, 0],
+                    [749, 0.1, 0.374, 1, 1, 0],
+                    [750, 0.232, 0.204, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヂ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [748, 0.144, 0.094, 1, 1, 0],
+                    [749, 0.1, 0.374, 1, 1, 0],
+                    [750, 0.232, 0.204, 1, 1, 0],
+                    [706, 0.788, 0.082, 1, 1, 0],
+                    [706, 0.824, 0.06, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ツ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [751, 0.198, 0.204, 1, 1, 0],
+                    [751, 0.428, 0.138, 1, 1, 0],
+                    [752, 0.258, 0.166, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ッ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [751, 0.35, 0.356, 0.5, 0.5, 0],
+                    [751, 0.466, 0.322, 0.5, 0.5, 0],
+                    [752, 0.38, 0.32, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヅ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [751, 0.198, 0.204, 1, 1, 0],
+                    [751, 0.428, 0.138, 1, 1, 0],
+                    [752, 0.258, 0.166, 1, 1, 0],
+                    [706, 0.866, 0.112, 1, 1, 0],
+                    [706, 0.9, 0.092, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;テ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [753, 0.26, 0.126, 1, 1, 0],
+                    [754, 0.15, 0.32, 1, 1, 0],
+                    [755, 0.276, 0.358, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;デ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [753, 0.26, 0.126, 1, 1, 0],
+                    [754, 0.15, 0.32, 1, 1, 0],
+                    [755, 0.276, 0.358, 1, 1, 0],
+                    [706, 0.832, 0.08, 1, 1, 0],
+                    [706, 0.88, 0.06, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ト&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [756, 0.372, 0.094, 1, 1, 0],
+                    [757, 0.476, 0.404, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ド&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [756, 0.372, 0.094, 1, 1, 0],
+                    [757, 0.476, 0.404, 1, 1, 0],
+                    [706, 0.718, 0.192, 1, 1, 0],
+                    [706, 0.76, 0.172, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ナ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [758, 0.096, 0.304, 1, 1, 0],
+                    [759, 0.28, 0.098, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ニ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [760, 0.208, 0.3, 1, 1, 0],
+                    [761, 0.12, 0.614, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;゠&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [760, 0.354, 0.394, 0.5, 0.5, 0],
+                    [761, 0.312, 0.544, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヌ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [762, 0.194, 0.184, 1, 1, 0],
+                    [763, 0.256, 0.41, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ネ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [764, 0.406, 0.04, 1, 1, 0],
+                    [765, 0.076, 0.214, 1, 1, 0],
+                    [766, 0.464, 0.412, 1, 1, 0],
+                    [767, 0.61, 0.498, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ノ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [768, 0.184, 0.164, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ハ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [769, 0.07, 0.298, 1, 1, 0],
+                    [770, 0.576, 0.316, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;バ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [769, 0.07, 0.298, 1, 1, 0],
+                    [770, 0.576, 0.316, 1, 1, 0],
+                    [706, 0.752, 0.238, 1, 1, 0],
+                    [706, 0.788, 0.22, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;パ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [769, 0.07, 0.298, 1, 1, 0],
+                    [770, 0.576, 0.316, 1, 1, 0],
+                    [707, 0.748, 0.242, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヒ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [771, 0.32, 0.28, 1, 1, 0],
+                    [772, 0.222, 0.172, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ビ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [771, 0.32, 0.28, 1, 1, 0],
+                    [772, 0.222, 0.172, 1, 1, 0],
+                    [706, 0.728, 0.2, 1, 1, 0],
+                    [706, 0.764, 0.184, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ピ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [771, 0.32, 0.28, 1, 1, 0],
+                    [772, 0.222, 0.172, 1, 1, 0],
+                    [707, 0.718, 0.186, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;フ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [773, 0.172, 0.176, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ブ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [773, 0.172, 0.176, 1, 1, 0],
+                    [706, 0.814, 0.12, 1, 1, 0],
+                    [706, 0.852, 0.104, 1, 1, 0]
+
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;プ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [773, 0.172, 0.176, 1, 1, 0],
+                    [707, 0.836, 0.128, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヘ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [774, 0.07, 0.312, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ベ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [774, 0.07, 0.312, 1, 1, 0],
+                    [706, 0.736, 0.304, 1, 1, 0],
+                    [706, 0.774, 0.284, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ペ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [774, 0.07, 0.312, 1, 1, 0],
+                    [707, 0.752, 0.284, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ホ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [775, 0.128, 0.276, 1, 1, 0],
+                    [776, 0.322, 0.114, 1, 1, 0],
+                    [777, 0.14, 0.438, 1, 1, 0],
+                    [778, 0.644, 0.452, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ボ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [775, 0.128, 0.276, 1, 1, 0],
+                    [776, 0.322, 0.114, 1, 1, 0],
+                    [777, 0.14, 0.438, 1, 1, 0],
+                    [778, 0.644, 0.452, 1, 1, 0],
+                    [706, 0.784, 0.132, 1, 1, 0],
+                    [706, 0.82, 0.11, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ポ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [775, 0.128, 0.276, 1, 1, 0],
+                    [776, 0.322, 0.114, 1, 1, 0],
+                    [777, 0.14, 0.438, 1, 1, 0],
+                    [778, 0.644, 0.452, 1, 1, 0],
+                    [707, 0.794, 0.116, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;マ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [779, 0.106, 0.188, 1, 1, 0],
+                    [780, 0.336, 0.42, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ミ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [781, 0.318, 0.098, 1, 1, 0],
+                    [782, 0.304, 0.346, 1, 1, 0],
+                    [783, 0.25, 0.614, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ム&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [784, 0.152, 0.14, 1, 1, 0],
+                    [785, 0.614, 0.422, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;メ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [786, 0.15, 0.1, 1, 1, 0],
+                    [787, 0.276, 0.336, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;モ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [788, 0.21, 0.172, 1, 1, 0],
+                    [789, 0.1, 0.412, 1, 1, 0],
+                    [790, 0.426, 0.222, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヤ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [791, 0.102, 0.218, 1, 1, 0],
+                    [792, 0.306, 0.086, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ャ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [791, 0.302, 0.364, 0.5, 0.5, 0],
+                    [792, 0.4, 0.294, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ユ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [793, 0.218, 0.258, 1, 1, 0],
+                    [794, 0.108, 0.57, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ュ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [793, 0.358, 0.374, 0.5, 0.5, 0],
+                    [794, 0.302, 0.528, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヨ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [795, 0.25, 0.172, 1, 1, 0],
+                    [796, 0.282, 0.408, 1, 1, 0],
+                    [797, 0.258, 0.646, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ョ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [795, 0.376, 0.34, 0.5, 0.5, 0],
+                    [796, 0.392, 0.454, 0.5, 0.5, 0],
+                    [797, 0.378, 0.572, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ラ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [798, 0.266, 0.078, 1, 1, 0],
+                    [799, 0.182, 0.27, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;リ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [800, 0.296, 0.098, 1, 1, 0],
+                    [801, 0.292, 0.064, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ル&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [802, 0.07, 0.256, 1, 1, 0],
+                    [803, 0.5, 0.156, 0.8, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;レ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [804, 0.256, 0.15, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ロ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [805, 0.202, 0.232, 1, 1, 0],
+                    [806, 0.282, 0.224, 1, 1, 0],
+                    [807, 0.294, 0.598, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ロ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [805, 0.202, 0.232, 1, 1, 0],
+                    [806, 0.282, 0.224, 1, 1, 0],
+                    [807, 0.294, 0.598, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ワ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [808, 0.202, 0.136, 1, 1, 0],
+                    [809, 0.28, 0.118, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヷ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [808, 0.202, 0.136, 1, 1, 0],
+                    [809, 0.28, 0.118, 1, 1, 0],
+                    [706, 0.8, 0.076, 1, 1, 0],
+                    [706, 0.84, 0.056, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヮ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [808, 0.35, 0.32, 0.5, 0.5, 0],
+                    [809, 0.38, 0.31, 0.5, 0.5, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヰ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [810, 0.228, 0.24, 1, 1, 0],
+                    [811, 0.346, 0.3, 1, 1, 0],
+                    [812, 0.096, 0.472, 1, 1, 0],
+                    [813, 0.502, 0.054, 1, 1, 0]
+
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヸ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [810, 0.228, 0.24, 1, 1, 0],
+                    [811, 0.346, 0.3, 1, 1, 0],
+                    [812, 0.096, 0.472, 1, 1, 0],
+                    [813, 0.502, 0.054, 1, 1, 0],
+                    [706, 0.748, 0.124, 1, 1, 0],
+                    [706, 0.786, 0.104, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヱ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [814, 0.218, 0.21, 1, 1, 0],
+                    [815, 0.442, 0.376, 1, 1, 0],
+                    [816, 0.122, 0.6, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヹ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [814, 0.218, 0.21, 1, 1, 0],
+                    [815, 0.442, 0.376, 1, 1, 0],
+                    [816, 0.122, 0.6, 1, 1, 0],
+                    [706, 0.75, 0.166, 1, 1, 0],
+                    [706, 0.786, 0.144, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヲ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [817, 0.204, 0.104, 1, 1, 0],
+                    [818, 0.238, 0.308, 1, 1, 0],
+                    [819, 0.314, 0.102, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ヺ&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [817, 0.204, 0.104, 1, 1, 0],
+                    [818, 0.238, 0.308, 1, 1, 0],
+                    [819, 0.314, 0.102, 1, 1, 0],
+                    [706, 0.81, 0.058, 1, 1, 0],
+                    [706, 0.85, 0.044, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ン&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [820, 0.2, 0.154, 1, 1, 0],
+                    [821, 0.196, 0.24, 1, 1, 0]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;ー&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [1, 0.238, 0.408, 1, 1, -7]
+                ]
+            ]
+        },
+        {
+            &quot;lang&quot;: &quot;ja&quot;,
+            &quot;rune&quot;: &quot;☺&quot;,
+            &quot;kana&quot;: true,
+            &quot;strokes&quot;: [
+                [
+                    [822, 0.238, 0.208, 1, 1, 0],
+                    [823, 0.25, 0.31, 1, 1, 0],
+                    [822, 0.588, 0.208, 1, 1, 0],
+                    [823, 0.566, 0.31, 1, 1, 0],
+                    [824, 0.382, 0.478, 1, 1, 0],
+                    [825, 0.366, 0.53, 1, 1, 0],
+                    [826, 0.382, 0.45, 1, 1, 0],
+                    [822, 0.37, 0.688, 1, 1, 0],
+                    [827, 0.08, 0.136, 1, 1, 0],
+                    [829, 0.768, 0.18, 1, 1, 0],
+                    [828, 0.84, 0.152, 1, 1, 0]
+                ]
+            ]
+        }
+    ];
+
+    /**
+     * @method getData
+     * @returns {Object}
+     */
+    function getData() {
+        return data;
+    }
+
+    return {
+        getData: getData
+    };
+});
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
